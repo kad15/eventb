@@ -1,0 +1,172 @@
+\documentclass[a4paper,11pt]{article}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % ATTENTION : dans les figures le label doit être mis 
+%APRES le caption pour que le numéro de la figure lorqu'on
+%la référence soit le bon ; sinon on a le numéro du paragraphe
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+% package qui fournit \justify 
+\usepackage[document]{ragged2e}
+
+%pifont pour les puces de formes spéciales
+\usepackage{pifont}
+
+% césure exemple
+% \hyphenation{an-ti-cons-ti-tu-tion-nel
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel} % If you write in French
+%\usepackage[english]{babel} % If you write in English
+\usepackage{lmodern} % Pour changer le pack de police
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{makeidx}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{stmaryrd}
+\usepackage{geometry}
+%\usepackage{graphicx}
+\usepackage{graphbox}
+\usepackage{supertabular}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\geometry{hmargin=2cm,vmargin=2cm}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{ltablex}
+\usepackage{float}
+\usepackage{url}
+
+\usepackage{chngcntr}
+\counterwithin*{footnote}{page}
+
+
+\usepackage[titletoc,toc,title,page]{appendix}
+\renewcommand{\appendixtocname}{Annexes}
+\renewcommand{\appendixpagename}{Annexes}
+
+\usepackage{standalone}
+\usepackage{ifthen}
+\usepackage{xstring}
+\usepackage{calc}
+\usepackage{pgfopts}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\makeatletter
+\renewcommand{\ALG@name}{Algorithme}
+\renewcommand{\listalgorithmname}{Table des algorithmes}
+
+\newtheorem{theo}{Définition}[section]
+\usepackage{mathtools, bm}
+\usepackage{amssymb, bm}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,       % color of internal links
+    citecolor=purple,       % color of links to bibliography
+    urlcolor=blue          % color of external links
+}
+
+\usepackage{listings}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+\lstset{
+  language        = php,
+  basicstyle      = \small\ttfamily,
+  keywordstyle    = \color{dkblue},
+  stringstyle     = \color{red},
+  identifierstyle = \color{dkgreen},
+  commentstyle    = \color{gray},
+  emph            =[1]{php},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else},
+  emphstyle       =[2]\color{dkyellow}}
+
+
+
+\usepackage{blindtext}
+\usepackage{enumitem} % pour changer les puces dans \itemize
+
+
+\date{\today}
+
+\makeindex
+\def\siecle#1{\textsc{\romannumeral #1}\textsuperscript{e}}
+\newcommand{\argmax}{\mathop{\mathrm{argmax}}\nolimits}
+\newcommand{\pgcd}{\mathop{\mathrm{pgcd}}\nolimits}
+
+\makeatletter
+\renewcommand{\pod}[1]{\allowbreak\mathchoice
+  {\if@display \mkern 18mu\else \mkern 8mu\fi (#1)}
+  {\if@display \mkern 18mu\else \mkern 8mu\fi (#1)}
+  {\mkern4mu(#1)}
+  {\mkern4mu(#1)}
+}
+
+\usepackage{wallpaper}
+
+\begin{document}
+\renewcommand{\labelitemi}{\textbullet}
+% pour factoriser l'échelle des figures 
+%utilisation scale=\scaledvwa au lieu de scale = 0.3 ... 
+\newcommand{\scaledvwa}{0.4} 
+\newcommand{\scaledvw}{0.3}
+\newcommand{\scalekad}{0.45}
+
+\input{page-de-couverture/couv.tex}%on créé la couverture
+
+\pagebreak
+
+\tableofcontents
+\justify
+\input{intro_conclusion/introduction}
+
+\section{Analyse de marché suivant le modèle de Porter}
+\input{sections/partie_1_concurrence}
+\input{sections/partie_1_clients}
+\input{sections/partie_1_fournisseurs}
+\input{sections/partie_1_entrants}
+\input{sections/partie_1_substituts}
+\input{sections/partie_2}
+\input{sections/partie_3}
+\input{intro_conclusion/conclusion}
+
+
+%\newpage
+%\appendix
+%\include{annexes/annexe_A}
+%\include{annexes/annexe_B}
+
+\newpage
+\nocite{*}  %affiche toutes les entrées du bib même celles qui ne sont pas citées.
+% cf.    http://www.tuteurs.ens.fr/logiciels/latex/bibtex.html
+% compilation en TROIS PHASE  bibtex traite un fichier *.aux mais bibtex mon_fichier comme bibtex mon_fichier.aux sont acceptés 
+% latex mon_fichier.tex
+% bibtex mon_fichier
+% latex mon_fichier.tex
+
+
+% \renewcommand{\bibname}{Toto}
+% ou
+\renewcommand{\refname}{Bibliographie}
+% dans le préambule.
+\bibliographystyle{alpha}
+\bibliography{references}
+
+\input{page-de-couverture/page_blanche}
+\input{page-de-couverture/quatrieme-de-couv}
+\end{document}
