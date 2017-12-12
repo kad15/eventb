@@ -5,10 +5,76 @@
 %\paragraph{}
 
 
-\begin{figure}[H]
-	\begin{center}	
-		\includegraphics[scale=0.85]{images/enac}
-		\caption{Diagramme hiérarchique des fonctions}
-		\label{hier}
-	\end{center}
-\end{figure}
+%\begin{figure}[H]
+%	\begin{center}	
+%		\includegraphics[scale=0.85]{images/enac}
+%		\caption{Diagramme hiérarchique des fonctions}
+%		\label{hier}
+%	\end{center}
+%\end{figure}
+\subsection{Généralités}
+\paragraph{}
+Le système est modélisé sous forme d'une machine à états-transitions. Les états sont caractérisés par des constantes respectant des axiomes et des variables respectant des conditions nommées "invariants". Les constantes caractérisent le "contexte" du système i.e. l'aspect statique. Les variables décrivent l'aspect dynamique. Les transitions sont désignées par le terme event. Les events sont des actions conditionnées ou non par une garde. Une garde est une condition qui autorisera ou non l'action du système. La transition du système est supposée instantanée et se produire dès que la garde est vraie. Il peut survenir des cas d'indéterminisme externe lorsque plusieurs gardes sont vraies simultanément. Si elles sont toutes fausses, le système est bloqué. Si, à tout instant, une garde est vraie, le système ne se termine jamais.
+
+\paragraph{}
+La démarche itérative proposée dans l'exercice consiste à écrire les exigences a partir des spécifications ; chaque exigence est identifiée par un label qui permet la traçabilité et le classement en catégories notamment fonctionnelle et environnementale. On part d'un modèle abstrait simple, formalisé dans l'outil rodin. Des preuves notamment d'invariance sont effectuées. Le plugin Atelier B génère des obligations de preuves dans un langage correspondant à la logique du premier ordre associée à la théorie des ensembles.Atelier B utilise notamment une base de règles d’inférence associée à un moteur contenant des heuristiques et un prouveur de type SAT.
+
+\paragraph{} Le modèle formel est corrigé le cas échéant par ajout de gardes ou de conditions sur les gardes si on cherche à éviter les blocages. Les exigences sont complétées si nécessaire. Enfin par raffinement successifs, on passe d'une vision synoptique du système à une vue plus détaillée qui peut conduire jusqu'à la phase d'implémentation.
+
+
+
+
+
+
+
+\subsection{Analyse des spécifications}
+
+\paragraph{}
+
+Le système à concevoir est un \textbf{contrôleur aérien automatique} chargé de contrôler le trafic sur le tarmac et d'autoriser l'accès à la piste des avions prêts au décollage. 
+\paragraph{}
+Ce système est un logiciel qu'on appelera le Contrôleur. Ce contrôleur interagit avec son environnement à savoir les pilotes et des capteurs non précisés dans l'énoncé. Les spécifications sont incomplètes car le contrôleur doit forcément autoriser ou refuser les avions à l'atterrissage également. Il est nécessaire d'avoir un capteur qui permet de compter les avions qui entrent et sortent du tarmac et un autre capteur qui assure le comptage des avions sur la piste. Les avions ne peuvent atterrir que si l'aéroport n'est pas plein, 20 places maximum sont disponibles. 
+\paragraph{}
+On suppose que les clearances sont données aux avions qui se trouvent sur le tarmac. Dès l'autorisation de décoller donnée, l'avion se rend sur la piste et décolle. Il n'y a pas d'étape intermédiaire. Un système de communication sécurisé de type data-link doit exister pour donner les clearances et recevoir les identifiants et les demandes des pilotes.
+
+\paragraph{}
+On suppose qu'il ne peut y avoir qu'un seul avion sur la piste ; pas de possibilité
+de mettre deux avions au décollage en même temps.
+
+
+\subsection{Reformulation des exigences}
+
+
+
+\begin{tabular}{|l|l|}
+	\hline 
+	\textbf{Label}&\textbf{Exigence}  \\ 
+	\hline 
+	FON-1&Le contrôleur doit autoriser les avions à décoller et atterrir  \\ 
+	\hline 
+FON-2	& Le nombre d'avions sur le tarmac est limité à 20 y compris ceux en attente  \\ 
+	\hline 
+	FON-3& Des avions entrent sur la piste et la quittent  \\ 
+	\hline 
+	FON-4& Des avions entrent sur le tarmac et le quittent  \\ 
+	\hline 
+	FON-5& La piste ne peut être occupée par plus de un avion \\ 
+	\hline 
+	FON-6& Le nombre de décollages ou atterrissages successifs n'est pas limité   \\ 
+	\hline 
+	FON-7& Le contrôleur doit fixer et délivrer les clearances à l'avance   \\ 
+	\hline 
+	FON-8& Le contrôleur ne doit autoriser l'avion qu'après l'envoi de son identifiant    \\ 
+		\hline
+	FON-9& Le contrôleur doit soit refuser, soit accepter, soit mettre en attente l'avion demandeur   \\ 
+ 	\hline
+ FON-10& Le contrôleur doit refuser la clearance après 10 de mise en attente.   \\ 
+	\hline 
+   ENV-1 &Tout avion se dirigeant vers la piste doit avoir une autorisation de décoller \\ 
+   	\hline 
+   ENV-2 &Le système est muni d'un capteur qui permet de compter les avions sur la piste \\ 
+   \hline 
+   ENV-3 &Le système est muni d'un capteur qui permet de compter les avions sur la tarmac \\ 
+	\hline 
+\end{tabular} 
+
