@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.11.17)  12 DEC 2017 03:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.11.17)  12 DEC 2017 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1348,52 +1348,52 @@ e 32.
 {d:/prog/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/c
 trl2.jpg>])
 (./rapport.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 4.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 7.
  (d:/prog/texlive/2017/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 7.
 
 (d:/prog/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 4.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 7.
 
 (d:/prog/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 4.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 7.
 
 (d:/prog/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 4.
+(Font)              <12> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 7.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+(Font)              <6> on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
 (d:/prog/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 (d:/prog/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 4.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 7.
 
 (d:/prog/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 4.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 7.
 
 (d:/prog/texlive/2017/texmf-dist/tex/latex/stmaryrd/ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 4.
+(Font)              using `U/stmry/m/n' instead on input line 7.
 
 )
 \tf@toc=\write7
@@ -1407,51 +1407,66 @@ l.3
      [1]) (./sections/partie_1.tex
 (d:/prog/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [2]
-Overfull \hbox (20.23213pt too wide) in paragraph at lines 49--80
-[][] 
+))
+(./sections/partie_2.tex [2]
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+ []|\T1/lmss/bx/n/12 Exigence| 
  []
 
-) (./sections/partie_2.tex) (./sections/partie_3.tex) (./sections/partie_4.tex)
+
+Overfull \hbox (16.66403pt too wide) in paragraph at lines 38--71
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 71.
+(d:/prog/texlive/2017/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <12> not available
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 71.
+
+) (./sections/partie_3.tex) (./sections/partie_4.tex) (./sections/partie_5.tex)
 (./intro_conclusion/conclusion.tex) [3] (./page-de-couverture/page_blanche.tex)
 (./page-de-couverture/quatrieme-de-couv.tex [4])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-<images/ctrl1.jpg, id=110, 523.02832pt x 784.64572pt>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+<images/ctrl1.jpg, id=111, 523.02832pt x 784.64572pt>
 File: images/ctrl1.jpg Graphic file (type jpg)
 <use images/ctrl1.jpg>
-Package pdftex.def Info: images/ctrl1.jpg  used on input line 166. on input lin
-e 166.
+Package pdftex.def Info: images/ctrl1.jpg  used on input line 167. on input lin
+e 167.
 Package pdftex.def Info: Requested size: 866.42314pt x 845.0581pt on input line
- 166.
+ 167.
  [5 <./images/ctrl1.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
 
 (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: ECAF3DE3AED72AE20F235BBB013C8AAF;566.
+(rerunfilecheck)             Checksum: 2E1B4214E1FD7801DDD0BDD39B8A960D;552.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 26856 strings out of 492985
- 498918 string characters out of 6133958
- 906930 words of memory out of 5000000
- 29713 multiletter control sequences out of 15000+600000
- 48989 words of font info for 56 fonts, out of 8000000 for 9000
+ 26893 strings out of 492985
+ 499770 string characters out of 6133958
+ 907931 words of memory out of 5000000
+ 29743 multiletter control sequences out of 15000+600000
+ 51784 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,82p,925b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/prog/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<d:/prog/texliv
-e/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/prog/texlive/2017/texmf-
-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on rapport.pdf (6 pages, 5966003 bytes).
+e/2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><d:/prog/texlive/2017/texmf
+-dist/fonts/type1/public/lm/lmss12.pfb><d:/prog/texlive/2017/texmf-dist/fonts/t
+ype1/public/lm/lmssbx10.pfb>
+Output written on rapport.pdf (6 pages, 5986096 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 137 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
  26 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
