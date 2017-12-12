@@ -34,18 +34,18 @@ de mettre deux avions au décollage en même temps.
 \begin{table} [H]
 	
 	\centering
+\rowcolors{2}{gray!65}{white}
+\begin{tabu}{|[2pt] p{1.7cm} | [2pt]p{15cm}|[2pt]}
 
-\begin{tabular}{| p{1.7cm} | p{15cm}|}
-
-	\hline \rowcolor{yellow}
-\Centering	\textbf{Label}& \Centering \textbf{Exigence}  \\ 
+	\tabucline[2pt]{-} \rowcolor{yellow}
+\Centering	\textbf{Label}& \Centering \textbf{Exigence}  \\ \tabucline[2pt]{-}
 
 	\hline 
 	FON-1&Le contrôleur doit autoriser les avions à décoller et atterrir  \\ 
 	\hline 
 FON-2	& Le nombre d'avions sur le tarmac est limité à 20 y compris ceux en attente  \\ 
 	\hline 
-	FON-3& Des avions entrent sur la piste et la quittent  \\ 
+	FON-3& Des avions entrent et quittent la piste d'atterrissage décollage  \\ 
 	\hline 
 	FON-4& Des avions entrent sur le tarmac et le quittent  \\ 
 	\hline 
@@ -66,8 +66,8 @@ FON-2	& Le nombre d'avions sur le tarmac est limité à 20 y compris ceux en att
    ENV-2 &Le système est muni d'un capteur qui permet de compter les avions sur la piste \\ 
    \hline 
    ENV-3 &Le système est muni d'un capteur qui permet de compter les avions sur la tarmac \\ 
-	\hline 
-\end{tabular} 
+\tabucline[2pt]{-}
+\end{tabu} 
 \caption{Tableau des exigences}
 \end{table}
 
