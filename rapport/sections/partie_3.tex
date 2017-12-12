@@ -3,5 +3,36 @@
 %\subsection{}
 %\paragraph{}
 
+   On veut initialement considérer très peu d'exigences. L'énoncé nous indique
+   que seules les entrées et sorties de l'aéroport sont étudiées. On effectue donc une étude formelle sur un système très simplifié où la piste et le tarmac ne sont pas pris en compte. Nous étudions uniquement les échanges d'avions entre l'aéroport et l'extérieur ce qu'on modélise en utilisant deux events ou transitions :
    
-    
+   \begin{itemize}
+   	\item extout lorsqu'un avion sort de l'espace extérieur pour rentrer dans l'espace aéroportuaire,
+   	\item extin lorsqu'un avion entre dans l'espace extérieur.
+   \end{itemize} 
+
+On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre d'avions présents sur le tarmac, noté nt, à un instant donné et la constante ntmax = 20 correspondant au nombre maximum d'avions stationnés sur le tarmac.
+
+\paragraph{Etat static ou \textit{contexte} du système :}
+L'état statique est caractérisé par ntmax :
+
+  \begin{align}
+constant: nt 
+\end{align}
+
+
+ \begin{align}
+axm0\_1: ntmax \in ℕ 
+\end{align}
+
+\paragraph{Etat dynamique du système :}
+ L'état dynamique du système n'est constitué que de cette seule variable. Elle est définie au moyen de deux conditions ou \textit{invariants} :
+   \begin{align}
+  inv0\_1 : nt \in ℕ 
+   \end{align}
+   
+    \begin{align}
+   inv0\_2 : nt \le ntmax
+   \end{align}
+   
+  ntmax désigne

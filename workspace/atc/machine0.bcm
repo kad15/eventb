@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="false" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase">
+<org.eventb.core.scInvariant name="'" org.eventb.core.label="inv0_1" org.eventb.core.predicate="nt∈ℕ" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#)" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable de.prob.units.unitPragmaAttribute="" name="nt" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.variable#(" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scMachineFile>

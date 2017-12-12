@@ -12,7 +12,9 @@
 \contentsline {paragraph}{}{3}{section*.9}
 \contentsline {subsection}{\numberline {2.3}Reformulation des exigences}{4}{subsection.2.3}
 \contentsline {section}{\numberline {3}Premi\IeC {\`e}re mod\IeC {\'e}lisation abstraite}{4}{section.3}
-\contentsline {section}{\numberline {4}Premier raffinement}{4}{section.4}
-\contentsline {section}{\numberline {5}Second raffinement}{4}{section.5}
-\contentsline {section}{Conclusion}{4}{section*.10}
-\contentsline {paragraph}{}{4}{section*.11}
+\contentsline {paragraph}{Etat static ou \textit {contexte} du syst\IeC {\`e}me :}{4}{section*.10}
+\contentsline {paragraph}{Etat dynamique du syst\IeC {\`e}me :}{4}{section*.11}
+\contentsline {section}{\numberline {4}Premier raffinement}{5}{section.4}
+\contentsline {section}{\numberline {5}Second raffinement}{5}{section.5}
+\contentsline {section}{Conclusion}{5}{section*.12}
+\contentsline {paragraph}{}{5}{section*.13}

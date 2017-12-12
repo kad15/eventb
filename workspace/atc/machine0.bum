@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="nt ≔ 0"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="(" org.eventb.core.identifier="nt"/>
+<org.eventb.core.invariant name=")" org.eventb.core.label="inv0_1" org.eventb.core.predicate="nt ∈ ℕ"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv0_2" org.eventb.core.predicate="nt ≤ ntmax" org.eventb.core.theorem="true"/>
+<org.eventb.core.event name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="extin"/>
+<org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="extout"/>
+</org.eventb.core.machineFile>
