@@ -3,15 +3,16 @@
 \contentsline {section}{\numberline {1}G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{2}{section.1}
 \contentsline {paragraph}{}{2}{section*.4}
 \contentsline {paragraph}{}{2}{section*.5}
-\contentsline {section}{\numberline {2}Expression textuelle des exigences}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Analyse des sp\IeC {\'e}cifications}{2}{subsection.2.1}
-\contentsline {paragraph}{}{2}{section*.6}
-\contentsline {paragraph}{}{2}{section*.7}
-\contentsline {paragraph}{}{2}{section*.8}
+\contentsline {section}{\numberline {2}Expression textuelle des exigences}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Description du syst\IeC {\`e}me et de son environnement}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Analyse des sp\IeC {\'e}cifications}{3}{subsection.2.2}
+\contentsline {paragraph}{}{3}{section*.6}
+\contentsline {paragraph}{}{3}{section*.7}
+\contentsline {paragraph}{}{3}{section*.8}
 \contentsline {paragraph}{}{3}{section*.9}
-\contentsline {subsection}{\numberline {2.2}Reformulation des exigences}{3}{subsection.2.2}
-\contentsline {section}{\numberline {3}Premi\IeC {\`e}re mod\IeC {\'e}lisation abstraite}{3}{section.3}
-\contentsline {section}{\numberline {4}Premier raffinement}{3}{section.4}
-\contentsline {section}{\numberline {5}Second raffinement}{3}{section.5}
-\contentsline {section}{Conclusion}{3}{section*.10}
-\contentsline {paragraph}{}{3}{section*.11}
+\contentsline {subsection}{\numberline {2.3}Reformulation des exigences}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}Premi\IeC {\`e}re mod\IeC {\'e}lisation abstraite}{4}{section.3}
+\contentsline {section}{\numberline {4}Premier raffinement}{4}{section.4}
+\contentsline {section}{\numberline {5}Second raffinement}{4}{section.5}
+\contentsline {section}{Conclusion}{4}{section*.10}
+\contentsline {paragraph}{}{4}{section*.11}
