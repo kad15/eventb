@@ -11,28 +11,43 @@
    	\item extin lorsqu'un avion entre dans l'espace extérieur.
    \end{itemize} 
 
-On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre d'avions présents sur le tarmac, noté nt, à un instant donné et la constante ntmax = 20 correspondant au nombre maximum d'avions stationnés sur le tarmac.
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.4]{images/mod0}
+		\caption{Modèle abstrait}
+		\label{mod0}
+	\end{center}
+\end{figure}
+
+On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre d'avions présents sur le tarmac à un instant donné. On note nt cette variable.
 
 \paragraph{Etat static ou \textit{contexte} du système :}
 L'état statique est caractérisé par ntmax :
-
-  \begin{align}
-constant: nt 
-\end{align}
-
-
- \begin{align}
-axm0\_1: ntmax \in ℕ 
-\end{align}
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.8]{images/ctx0}
+		\caption{Etat static du système}
+		\label{ctx0}
+	\end{center}
+\end{figure}
 
 \paragraph{Etat dynamique du système :}
  L'état dynamique du système n'est constitué que de cette seule variable. Elle est définie au moyen de deux conditions ou \textit{invariants} :
-   \begin{align}
-  inv0\_1 : nt \in ℕ 
-   \end{align}
-   
-    \begin{align}
-   inv0\_2 : nt \le ntmax
-   \end{align}
-   
-  ntmax désigne
+%   \begin{align}
+%  inv0\_1 : nt \in ℕ 
+%   \end{align}
+%   
+%    \begin{align}
+%   inv0\_2 : nt \le ntmax
+%   \end{align}
+%   
+
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.8]{images/mac0}
+		\caption{Etat dynamique du système}
+		\label{mac0}
+	\end{center}
+\end{figure}
+
+
