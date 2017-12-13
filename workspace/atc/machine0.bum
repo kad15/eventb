@@ -3,7 +3,7 @@
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="'" org.eventb.core.assignment="nt ≔ 0" org.eventb.core.label="act1"/>
 </org.eventb.core.event>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="nombre d'avions sur le tarmac" de.prob.units.unitPragmaAttribute="" name="(" org.eventb.core.identifier="nt"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="avions" de.prob.units.unitPragmaAttribute="" name="(" org.eventb.core.identifier="nt"/>
 <org.eventb.core.invariant name=")" org.eventb.core.label="inv0_1" org.eventb.core.predicate="nt ∈ ℕ"/>
 <org.eventb.core.invariant name="*" org.eventb.core.label="inv0_2" org.eventb.core.predicate="nt ≤ ntmax"/>
 <org.eventb.core.seesContext name="+" org.eventb.core.target="context0"/>
@@ -15,4 +15,5 @@
 <org.eventb.core.action name="'" org.eventb.core.assignment="nt ≔ nt − 1" org.eventb.core.label="act1"/>
 <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="0 &lt; nt"/>
 </org.eventb.core.event>
+<org.eventb.core.invariant name="." org.eventb.core.label="DLF" org.eventb.core.predicate="nt &lt; ntmax ∨ 0 &lt; nt " org.eventb.core.theorem="true"/>
 </org.eventb.core.machineFile>

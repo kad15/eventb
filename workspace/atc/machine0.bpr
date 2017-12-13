@@ -81,4 +81,5 @@
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="nt∈ℕ"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 </org.eventb.core.prProof>
+<org.eventb.core.prProof name="DLF/THM"/>
 </org.eventb.core.prFile>

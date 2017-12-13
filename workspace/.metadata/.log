@@ -52,3 +52,10 @@ java.lang.IllegalArgumentException: Argument not valid
 
 !ENTRY de.prob.core 1 0 2017-12-13 04:25:03.046
 !MESSAGE Server can receive user interrupts via reference 15524
+
+!ENTRY de.prob.core 2 8 2017-12-13 05:34:57.121
+!MESSAGE Some components in your project contain warnings. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+machine0.bum: No Units inferred for Constant/Variable nt
+
