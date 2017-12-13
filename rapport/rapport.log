@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.11.17)  13 DEC 2017 04:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.11.17)  13 DEC 2017 05:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1233,7 +1233,11 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 \tileheight=\skip99
 \tileX=\skip100
 \tileY=\skip101
-) (./rapport.aux)
+) (./rapport.aux
+
+LaTeX Warning: Label `mac0' multiply defined.
+
+)
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
@@ -1501,12 +1505,20 @@ Package pdftex.def Info: images/mac0.png  used on input line 47. on input line
 47.
 Package pdftex.def Info: Requested size: 158.51239pt x 410.01234pt on input lin
 e 47.
-) (./sections/partie_4.tex) (./sections/partie_5.tex)
-(./intro_conclusion/conclusion.tex) [5 <./images/ctx0.png> <./images/mac0.png>]
-[6] (./page-de-couverture/page_blanche.tex)
+<images/proof1.png, id=122, 182.48175pt x 168.02776pt>
+File: images/proof1.png Graphic file (type png)
+<use images/proof1.png>
+Package pdftex.def Info: images/proof1.png  used on input line 55. on input lin
+e 55.
+Package pdftex.def Info: Requested size: 145.98558pt x 134.42238pt on input lin
+e 55.
+ [5 <./images/ctx0.png> <./images/mac0.png>])
+(./sections/partie_4.tex) (./sections/partie_5.tex)
+(./intro_conclusion/conclusion.tex) [6 <./images/proof1.png>]
+(./page-de-couverture/page_blanche.tex)
 (./page-de-couverture/quatrieme-de-couv.tex [7])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-<images/ctrl1.jpg, id=145, 523.02832pt x 784.64572pt>
+<images/ctrl1.jpg, id=148, 523.02832pt x 784.64572pt>
 File: images/ctrl1.jpg Graphic file (type jpg)
 <use images/ctrl1.jpg>
 Package pdftex.def Info: images/ctrl1.jpg  used on input line 168. on input lin
@@ -1525,13 +1537,16 @@ Package rerunfilecheck Info: File `rapport.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
  ) 
 Here is how much of TeX's memory you used:
- 27609 strings out of 492985
- 509816 string characters out of 6133958
+ 27615 strings out of 492985
+ 509921 string characters out of 6133958
  925176 words of memory out of 5000000
- 30438 multiletter control sequences out of 15000+600000
+ 30442 multiletter control sequences out of 15000+600000
  57657 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,16n,82p,925b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1542,10 +1557,10 @@ t/fonts/type1/public/lm/lmss12.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1
 /public/lm/lmssbo10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/
 lmssbx10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsso12.pfb
 >
-Output written on rapport.pdf (9 pages, 6239622 bytes).
+Output written on rapport.pdf (9 pages, 6247492 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
