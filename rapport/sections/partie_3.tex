@@ -4,7 +4,7 @@
 %\paragraph{}
 
    On veut initialement considérer très peu d'exigences. L'énoncé nous indique
-   que seules les entrées et sorties de l'aéroport sont étudiées. On effectue donc une étude formelle sur un système très simplifié où la piste et le tarmac ne sont pas pris en compte. Nous étudions uniquement les échanges d'avions entre l'aéroport et l'extérieur ce qu'on modélise en utilisant deux events ou transitions :
+   que seules les entrées et sorties de l'espace de l'aéroport sont étudiées. On effectue donc une étude formelle sur un système très simplifié où la piste et le tarmac ne sont pas pris en compte. Nous étudions uniquement les échanges d'avions entre l'espace de l'aéroport et l'espace extérieur ce qu'on modélise en utilisant deux events ou transitions :
    
    \begin{itemize}
    	\item extout lorsqu'un avion sort de l'espace extérieur pour rentrer dans l'espace aéroportuaire,
@@ -19,10 +19,10 @@
 	\end{center}
 \end{figure}
 
-On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre d'avions présents dans l'espace de l'aéroport à un instant donné. On note nt cette variable, nt pour number of aircraft on the tarmac car on suppose pour fixer les idées que les avions entrant dans l'espace aéroports se posent et rejoignent directement le tarmac.
+On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre total d'avions présents dans l'espace de l'aéroport à un instant donné. On note nt cette variable.
 
 \paragraph{Etat static ou \textit{contexte} du système :}
-L'état statique est caractérisé par ntmax :
+L'état statique est caractérisé par ntmax, le nombre total maximum d'avions dans  l'espace de l'aéroport i.e. la capacité de l'aéroport:
 \begin{figure}[H]
 	\begin{center}	
 		\includegraphics[scale=0.8]{images/ctx0}
