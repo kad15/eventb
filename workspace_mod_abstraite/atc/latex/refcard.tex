@@ -1,0 +1,166 @@
+% refcard.tex
+%
+% Copyright (C) 2004-09 by Laurent Voisin <laurent.voisin at systerel dot fr>
+% ---------------------------------------------------------------------------
+% 
+% This file may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in:
+%
+%    http://www.latex-project.org/lppl.txt
+%
+% and version 1.3 or later is part of all distributions of LaTeX 
+% version 2003/12/01 or later.
+%
+% This work has the LPPL maintenance status "author-maintained".
+% 
+% This work consists of the files bsymb.dtx, bsymb.ins and refcard.tex
+% and the derived file bsymb.sty.
+
+\NeedsTeXFormat{LaTeX2e}
+\documentclass[a4paper]{article}
+\usepackage{bsymb}
+
+% Ugly way to extract the version of the bsymb package, but could not
+% find a public API for that.
+{
+  \def\@extract#1/#2/#3 #4 #5\@nil{\gdef\bsymbversion{#4, dated #1/#2/#3}}
+  \edef\d@extract{\noexpand\@extract\csname
+    ver@bsymb.sty\endcsname\noexpand\@nil}
+  \d@extract
+}
+
+
+\title{B symbol reference card\thanks{This document
+  has been typeset using package \textsf{bsymb} \bsymbversion{}.}}
+\author{Laurent Voisin \\ Systerel}
+
+\newcount\colno
+\newcommand{\next}{%
+  \ifcase\colno\nextcol\or\nextcol\else\nextline\fi%
+  \global\advance\colno by1%
+}
+\newcommand{\skipline}{%
+  \ifnum\colno>0 \\\global\colno=0\fi%
+}
+\newcommand{\nextcol}{&}
+\newcommand{\nextline}{\\\global\advance\colno by-3}
+\newcommand{\X}[1]{#1 & \texttt{\string#1}\next}
+\newcommand{\Y}[2]{#1#2 & \texttt{\string#1\string#2}\next}
+\newcommand{\N}[1]{#1 & \texttt{\string#1}\textsuperscript{\textsc{new}}\next}
+
+\addtolength{\oddsidemargin}{-27pt}
+\addtolength{\textwidth}{54pt}
+%\addtolength\textheight\topmargin
+%\setlength{\topmargin}{0pt}
+%\addtolength\textheight{2\headheight}
+%\setlength{\headheight}{0pt}
+%\addtolength\textheight{2\headsep}
+%\setlength{\headsep}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{displaymath}
+  \begin{array}{ll@{\hspace{4.5em}}ll@{\hspace{4.5em}}ll}
+    \X(
+    \X)
+    \X*
+    \X+
+    \X,
+    \X-
+    \X<
+    \X=
+    \X>
+    \X[
+    \X]
+    \X\{
+    \X\}
+    \skipline
+    \X\bcmeq
+    \X\bcmin
+    \X\bcmsuch
+    \X\bcomp
+    \X\bfalse
+    \X\binter
+    \X\bmod
+    \X\Bool
+    \X\bool
+    \X\btrue
+    \X\bunion
+    \X\card
+    \X\cprod
+    \X\defi
+    \N\div
+    \X\dom
+    \X\domres
+    \X\domsub
+    \X\dprod
+    \X\emptyset
+    \X\exists
+    \X\expn
+    \X\False
+    \X\fcomp
+    \X\finite
+    \X\forall
+    \X\geq
+    \X\id
+    \X\in
+    \X\inter
+    \X\Inter
+    \X\intg
+    \X\lambda
+    \X\land
+    \X\leq
+    \X\leqv
+    \X\limp
+    \X\lnot
+    \X\lor
+    \X\mapsto
+    \X\max
+    \X\mid
+    \X\min
+    \X\nat
+    \X\natn
+    \X\neq
+    \X\notin
+    \X\oftype
+    \X\ovl
+    \X\partition
+    \X\pfun
+    \X\pinj
+    \X\pow
+    \X\pown
+    \X\pprod
+    \X\prjone
+    \X\prjtwo
+    \X\psur
+    \X\qdot
+    \X\ran
+    \X\ranres
+    \X\ransub
+    \X\rel
+    \X\setminus
+    \X\srel
+    \X\strel
+    \X\subset
+    \Y\not\subset
+    \X\subseteq
+    \Y\not\subseteq
+    \X\tbij
+    \X\tfun
+    \X\tinj
+    \X\trel
+    \X\True
+    \X\tsur
+    \X\union
+    \X\Union
+    \X\upred
+    \X\upto
+    \X\usucc
+  \end{array}
+\end{displaymath}
+
+\end{document}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<index_root>
+<pim project="/atc">
+<rodin_index>
+<descriptor element="/atc/context0.buc|org.eventb.core.contextFile#context0|org.eventb.core.constant#'" name="ntmax">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="5"/>
+<occurrence element="/atc/context0.buc|org.eventb.core.contextFile#context0|org.eventb.core.axiom#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="0"/>
+<occurrence element="/atc/context0.buc|org.eventb.core.contextFile#context0|org.eventb.core.axiom#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="0"/>
+<occurrence element="/atc/context0.buc|org.eventb.core.contextFile#context0|org.eventb.core.constant#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="5"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="5"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.variable#(" name="nt">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="17"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.variable#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="5"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="5"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="4"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#," name="extin">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#," kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/context0.buc|org.eventb.core.contextFile#context0" name="context0">
+<occurrence element="/atc/context0.buc|org.eventb.core.contextFile#context0" kind="org.eventb.core.declaration"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.seesContext#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-" name="extout">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" name="machine0">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" kind="org.eventb.core.declaration"/>
+</descriptor>
+</rodin_index>
+<export_table>
+<export file="/atc/context0.buc">
+<exported element="/atc/context0.buc|org.eventb.core.contextFile#context0" name="context0"/>
+<exported element="/atc/context0.buc|org.eventb.core.contextFile#context0|org.eventb.core.constant#'" name="ntmax"/>
+</export>
+<export file="/atc/machine0.bum">
+<exported element="/atc/context0.buc|org.eventb.core.contextFile#context0" name="context0"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#," name="extin"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-" name="extout"/>
+<exported element="/atc/context0.buc|org.eventb.core.contextFile#context0|org.eventb.core.constant#'" name="ntmax"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" name="machine0"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.variable#(" name="nt"/>
+</export>
+</export_table>
+<graph is_sorted="true">
+<node label="/atc/context0.buc" mark="false" order_pos="0"/>
+<node label="/atc/machine0.bum" mark="false" order_pos="1">
+<predecessor label="/atc/context0.buc"/>
+</node>
+</graph>
+<unprocessed file="/atc/context0.bcc"/>
+<unprocessed file="/atc/context0.bpo"/>
+<unprocessed file="/atc/context0.bpr"/>
+<unprocessed file="/atc/context0.bps"/>
+<unprocessed file="/atc/machine0.bcm"/>
+<unprocessed file="/atc/machine0.bpo"/>
+<unprocessed file="/atc/machine0.bpr"/>
+<unprocessed file="/atc/machine0.bps"/>
+</pim>
+<delta_list/>
+<indexer_registry>
+<registry_entry element_type="org.eventb.core.machineFile">
+<indexer id="machineIndexer"/>
+</registry_entry>
+<registry_entry element_type="org.eventb.core.contextFile">
+<indexer id="contextIndexer"/>
+</registry_entry>
+</indexer_registry>
+</index_root>

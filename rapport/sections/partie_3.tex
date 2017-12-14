@@ -19,7 +19,7 @@
 	\end{center}
 \end{figure}
 
-On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre d'avions présents sur le tarmac à un instant donné. On note nt cette variable.
+On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre d'avions présents dans l'espace de l'aéroport à un instant donné. On note nt cette variable, nt pour number of aircraft on the tarmac car on suppose pour fixer les idées que les avions entrant dans l'espace aéroports se posent et rejoignent directement le tarmac.
 
 \paragraph{Etat static ou \textit{contexte} du système :}
 L'état statique est caractérisé par ntmax :
@@ -83,13 +83,13 @@ Pour débuguer le modèle formel initial, il a fallu ajouter deux gardes pour ga
 		\hline 
 		FON-1.1& \textcolor{red}{Le contrôleur doit fonctionner indéfiniment une fois lancé.}  \\ 
 		\hline 
-		FON-2	& Le nombre d'avions sur le tarmac est limité à 20 y compris ceux en attente \textcolor{red}{mais doit rester positif} \\ 
+		FON-2	& Le nombre d'avions immobilisés sur le tarmac est limité à 20 y compris ceux en attente de décollage\textcolor{red}{mais doit rester positif} \\ 
 		\hline 
 		FON-3& Des avions entrent sur et quittent la piste d'atterrissage décollage  \\ 
 		\hline 
 		FON-4& Des avions entrent sur le tarmac et le quittent  \\ 
 		\hline 
-		FON-5& La piste ne peut être occupée par plus de un avion \\ 
+		FON-5& La piste ne peut être occupée par un avion au décollage et un avion à l'atterrissage en même temps. \\ 
 		\hline 
 		FON-6& Le nombre de décollages ou atterrissages successifs n'est pas limité   \\ 
 		\hline 
@@ -99,7 +99,7 @@ Pour débuguer le modèle formel initial, il a fallu ajouter deux gardes pour ga
 		\hline
 		FON-9& Le contrôleur doit soit refuser, soit accepter, soit mettre en attente l'avion demandeur   \\ 
 		\hline
-		FON-10& Le contrôleur doit refuser la clearance après 10 de mise en attente.   \\ 
+		FON-10& Le contrôleur doit refuser la clearance après 10mn de mise en attente.   \\ 
 		\hline 
 		ENV-1 &Tout avion se dirigeant vers la piste doit avoir une autorisation de décoller \\ 
 		\hline 
@@ -108,5 +108,5 @@ Pour débuguer le modèle formel initial, il a fallu ajouter deux gardes pour ga
 		ENV-3 &Le système est muni d'un capteur qui permet de compter les avions sur la tarmac \\ 
 		\tabucline[2pt]{-}
 	\end{tabu} 
-	\caption{Tableau des exigences}
+	\caption{Tableau des exigences V2}
 \end{table}

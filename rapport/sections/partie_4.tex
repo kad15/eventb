@@ -1,6 +1,53 @@
-
 \section{Premier raffinement}
 
+Dans cette partie, on introduit la piste pour évoluer vers un modèle plus concret. On peut ainsi spécifier  le nombre d'avions se trouvant sur la piste pour un décollage et après un atterrissage ainsi que le nombre d'avions sur le tarmac.
+Ce fait implique un "raffinement" des exigences environnementales ; on doit avoir un capteur capable de compter les avions au décollage et un capteur pour les avions à l'atterrissage. Ce qui donne :
+
+
+\begin{table} [H]
+	\centering
+\rowcolors{2}{gray!65}{white}
+\begin{tabu}{|[2pt] p{1.7cm} | [2pt]p{15cm}|[2pt]}
+	
+	\tabucline[2pt]{-} \rowcolor{yellow}
+	\Centering	\textbf{Label}& \Centering \textbf{Exigence}  \\ \tabucline[2pt]{-}
+	
+	\hline 
+	FON-1&Le contrôleur doit autoriser les avions à décoller et atterrir  \\ 
+	\hline 
+	FON-1.1& \textcolor{red}{Le contrôleur doit fonctionner indéfiniment une fois lancé.}  \\ 
+	\hline 
+	FON-2	& Le nombre d'avions immobilisés sur le tarmac est limité à 20 y compris ceux en attente de décollage\textcolor{red}{mais doit rester positif} \\ 
+	\hline 
+	FON-3& Des avions entrent sur et quittent la piste d'atterrissage décollage  \\ 
+	\hline 
+	FON-4& Des avions entrent sur le tarmac et le quittent  \\ 
+	\hline 
+	FON-5& La piste ne peut être occupée par un avion au décollage et un avion à l'atterrissage en même temps. \\ 
+	\hline 
+	FON-6& Le nombre de décollages ou atterrissages successifs n'est pas limité   \\ 
+	\hline 
+	FON-7& Le contrôleur doit fixer et délivrer les clearances à l'avance   \\ 
+	\hline 
+	FON-8& Le contrôleur ne doit autoriser l'avion qu'après l'envoi de son identifiant    \\ 
+	\hline
+	FON-9& Le contrôleur doit soit refuser, soit accepter, soit mettre en attente l'avion demandeur   \\ 
+	\hline
+	FON-10& Le contrôleur doit refuser la clearance après 10mn de mise en attente.   \\ 
+	\hline 
+	ENV-1 &Tout avion se dirigeant vers la piste doit avoir une autorisation de décoller \\ 
+	\hline 
+	ENV-2 &\textcolor{blue}{Le système est muni d'un capteur qui permet de compter les avions sur la piste à l'atterrissage et un capteur pour les avions sur la piste au décollage.} \\ 
+	\hline 
+	ENV-3 &Le système est muni d'un capteur qui permet de compter les avions sur la tarmac \\ 
+	\tabucline[2pt]{-}
+\end{tabu} 
+\caption{Tableau des exigences V3}
+\end{table}
+
+
+\paragraph{}
+Contrairement à ce qui se passe dans la réalité, les spécifications laissent la possibilité d'avoir au même moment plusieurs avions sur la piste au décollage ou à l'atterrissage dès lors qu'on ne mélange pas les décollages et atterrissages. En fait, cette spécification est similaire à celle d'un pont étroit qui à un instant donné est en sens unique car deux voitures n'ont pas la place de se croiser. Ici, le tarmac joue le rôle de l'île dans l'exemple du cours, la piste celui du pont et les terres continentales celui de l'espace extérieur à l'aéroport.
 
 %\subsection{}
 %\paragraph{}
