@@ -7,7 +7,7 @@
 \subsection{Description du système et de son environnement}
 \begin{figure}[H]
 	\begin{center}	
-		\includegraphics[scale=0.3]{images/ctx}
+		\includegraphics[scale=0.3]{images/0/ctx}
 		\caption{Environnement du système}
 		\label{ctx}
 	\end{center}
@@ -23,10 +23,6 @@ Le système à concevoir est un \textbf{contrôleur aérien automatique} chargé
 Ce système est un logiciel qu'on appelera le Contrôleur. Ce contrôleur interagit avec son environnement à savoir les pilotes et des capteurs non précisés dans l'énoncé. Les spécifications sont incomplètes car le contrôleur doit forcément autoriser ou refuser les avions à l'atterrissage également. Il est nécessaire d'avoir un capteur qui permet de compter les avions qui entrent et sortent du tarmac et un autre capteur qui assure le comptage des avions sur la piste. Les avions ne peuvent atterrir que si l'aéroport n'est pas plein, 20 places maximum sont disponibles. 
 \paragraph{}
 On suppose que les clearances sont données aux avions qui se trouvent sur le tarmac. Dès l'autorisation de décoller donnée, l'avion se rend sur la piste et décolle. Il n'y a pas d'étape intermédiaire. Un système de communication sécurisé de type data-link doit exister pour donner les clearances et recevoir les identifiants et les demandes des pilotes.
-
-\paragraph{}
-On suppose qu'il ne peut y avoir qu'un seul avion sur la piste ; pas de possibilité
-de mettre deux avions au décollage en même temps.
 
 
 \subsection{Reformulation des exigences}

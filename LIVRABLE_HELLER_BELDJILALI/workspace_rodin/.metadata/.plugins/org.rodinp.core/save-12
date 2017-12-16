@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<index_root>
+<pim project="/atc">
+<rodin_index>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#2" name="nbAvionsTarmac">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_EUdosOKQEeeYLdzZIMLGcg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#_gpgnYOH7Eee7O7WqJsjtsC" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.expression" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="29" loc_char_start="15"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#2" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*|org.eventb.core.action#_8cxggOHbEeeC1tehnGrBZg" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="121" loc_char_start="107"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="185" loc_char_start="171"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsB" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="57" loc_char_start="43"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="57" loc_char_start="43"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="29" loc_char_start="15"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="37" loc_char_start="23"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/" name="entrerPiste">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv" name="libererPisteKO">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#+" name="nbAvionsDecollage">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#+" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsB" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="43" loc_char_start="26"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="146" loc_char_start="129"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.action#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="35" loc_char_start="18"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="18" loc_char_start="1"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_CKd2UOKQEeeYLdzZIMLGcg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.guard#_pUBSgOHREee795omJdWmQB" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="17" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="37" loc_char_start="20"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.parameter#_sVPD8OHVEeeC1tehnGrBZh" name="p">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.parameter#_sVPD8OHVEeeC1tehnGrBZh" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZm" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#+" name="tarmac">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#A" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="44" loc_char_start="38"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#+" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="13"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#-" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="6" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="21" loc_char_start="15"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#_sVPD8OHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="21" loc_char_start="15"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0" name="sortirPiste">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#_1sQTIOHUEeeC1tehnGrBZh" name="pisteOK">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="17" loc_char_start="10"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZq" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="7"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4OHVEeeC1tehnGrBZl" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'|org.eventb.core.action#." kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZn" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="7" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZm" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#_1sQTIOHUEeeC1tehnGrBZh" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.parameter#)" name="a">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.parameter#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.action#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="40" loc_char_start="39"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*" name="INITIALISATION">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#," name="decoller">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-|org.eventb.core.refinesEvent#_8cyuoOHbEeeC1tehnGrBZg" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#," kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.parameter#(" name="p">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.parameter#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.action#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="30" loc_char_start="29"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="20"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.parameter#'" name="p">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.parameter#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="20"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.guard#_9PI74OJ7EeeMHK76VJaqWx" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-" name="decoller">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2" name="raffinement2">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.parameter#_sVOc4eHVEeeC1tehnGrBZi" name="a">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZl" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.action#_sVPD8OHVEeeC1tehnGrBZm" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="50" loc_char_start="49"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.parameter#_sVOc4eHVEeeC1tehnGrBZi" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.parameter#'" name="p">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.parameter#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#_sVPD8OHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.action#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="19" loc_char_start="18"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#-" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="3" loc_char_start="2"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#5" name="ensAvionsAtterrissage">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#6" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="21" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#8" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="60" loc_char_start="39"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZj" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="42" loc_char_start="21"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZl" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="25" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_FoMhcOKQEeeYLdzZIMLGcg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="47" loc_char_start="26"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.action#_sVPD8OHVEeeC1tehnGrBZm" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.action#_sVPD8OHVEeeC1tehnGrBZm" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="45" loc_char_start="24"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZm" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="28" loc_char_start="7"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.guard#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="26" loc_char_start="5"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZj" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="21" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#5" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#." name="atterrir">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#." kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#\/" name="nbAvionsAtterrissage">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="104" loc_char_start="84"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="61" loc_char_start="41"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6|org.eventb.core.action#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="41" loc_char_start="21"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="40" loc_char_start="20"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="208" loc_char_start="188"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_FoMhcOKQEeeYLdzZIMLGcg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsB" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="40" loc_char_start="20"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#\/" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.action#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="43" loc_char_start="23"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="20" loc_char_start="0"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#_gpgnYOH7Eee7O7WqJsjtsC" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.expression" loc_char_end="41" loc_char_start="21"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="20" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu" name="libererPisteOK">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2" name="contexte2">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.seesContext#_1sQTIOHUEeeC1tehnGrBZg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.parameter#_sVOc4eHVEeeC1tehnGrBZh" name="p">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="3" loc_char_start="2"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.parameter#_sVOc4eHVEeeC1tehnGrBZh" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4OHVEeeC1tehnGrBZl" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6" name="sortirPiste">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.refinesEvent#_sVPD8OHVEeeC1tehnGrBZg" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#(" name="ensAvions">
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="17" loc_char_start="8"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#_sVPD8OHVEeeC1tehnGrBZj" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#A" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="24" loc_char_start="15"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.guard#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="27" loc_char_start="18"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#6" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="33" loc_char_start="24"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#1" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="30" loc_char_start="21"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'" name="INITIALISATION">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" name="ntmax">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.guard#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="57" loc_char_start="52"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="5"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_iNViEOIxEeemWfF94_jsGA" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="127" loc_char_start="122"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="45" loc_char_start="40"/>
+<occurrence element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="0"/>
+<occurrence element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_FtZ5wOJdEeecA88TaccdHg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="5"/>
+<occurrence element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="10" loc_char_start="5"/>
+<occurrence element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_gTX2IOI5EeetmvWmBRd61g" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.parameter#(" name="a">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#\/" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.parameter#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;" name="accepterDemande">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0" name="contexte0">
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.extendsContext#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0" kind="org.eventb.core.declaration"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.seesContext#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.seesContext#9" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1" name="raffinement1">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1" kind="org.eventb.core.declaration"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.refinesMachine#_1sPsEOHUEeeC1tehnGrBZg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.parameter#_sVPD8OHVEeeC1tehnGrBZi" name="a">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.parameter#_sVPD8OHVEeeC1tehnGrBZi" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#_sVPD8OHVEeeC1tehnGrBZj" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.action#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="14" loc_char_start="13"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#-" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5" name="entrerPiste">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.refinesEvent#_sVOc4eHVEeeC1tehnGrBZg" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.variable#(" name="nt">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.variable#(" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.action#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="5"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="5"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsB" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="62" loc_char_start="60"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="15" loc_char_start="13"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.guard#'" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="2" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#." name="atterrir">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.refinesEvent#_sVOc4OHVEeeC1tehnGrBZg" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#." kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@" name="refuserDemande">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#*" name="clear">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#8" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="72" loc_char_start="67"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="27" loc_char_start="22"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#=" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="15"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="5" loc_char_start="0"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#*" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#-" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="6"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#_1sQTIOHUEeeC1tehnGrBZi" name="pisteKO">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.action#_9PI74OJ7EeeMHK76VJaqWw" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.action#)" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.action#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="17" loc_char_start="10"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.action#_9PI74OJ7EeeMHK76VJaqWw" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="17" loc_char_start="10"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZo" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="7" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#." kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="21" loc_char_start="14"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="21" loc_char_start="14"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.guard#_9PI74OJ7EeeMHK76VJaqWx" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="11" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZp" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="7"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#_1sQTIOHUEeeC1tehnGrBZi" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'|org.eventb.core.action#\/" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="7" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-" name="decoller">
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.refinesEvent#_sVNOwOHVEeeC1tehnGrBZg" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#*" name="ensAvionsTarmac">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'|org.eventb.core.action#'" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.action#_sVOc4eHVEeeC1tehnGrBZn" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#C" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#8" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="22" loc_char_start="7"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4OHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="4"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#*" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.guard#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="49" loc_char_start="34"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.action#_sVOc4eHVEeeC1tehnGrBZn" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="33" loc_char_start="18"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_EUdosOKQEeeYLdzZIMLGcg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="35" loc_char_start="20"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-" name="atterrir">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.refinesEvent#_pUBSgOHREee795omJdWmQA" kind="org.eventb.core.redeclaration" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#9" name="demandeAcces">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="18" loc_char_start="6"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.action#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="27" loc_char_start="15"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#A" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.action#*" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="12" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.action#," kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="12" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#9" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#=" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="12" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.action#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="12" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="8"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#*" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="20" loc_char_start="8"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'|org.eventb.core.action#-" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="12" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" name="machine0">
+<occurrence element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" kind="org.eventb.core.declaration"/>
+<occurrence element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.refinesMachine#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+</descriptor>
+<descriptor element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#)" name="ensPistes">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZo" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="10"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZn" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="10"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.guard#_sVPD8OHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="4"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#)" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#A" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="36" loc_char_start="27"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="29" loc_char_start="20"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="13" loc_char_start="4"/>
+<occurrence element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#-" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="18" loc_char_start="9"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#2" name="ensAvionsDecollage">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.action#," kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="37" loc_char_start="19"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'|org.eventb.core.action#(" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="18" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#2" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#C" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="36" loc_char_start="18"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.action#," kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="18" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZl" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="25" loc_char_start="7"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_1sQTIOHUEeeC1tehnGrBZj" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="18" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#_CKd2UOKQEeeYLdzZIMLGcg" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="41" loc_char_start="23"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.guard#_sVOc4OHVEeeC1tehnGrBZi" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="18" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#1" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="18" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.invariant#8" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="36" loc_char_start="18"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.guard#(" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="22" loc_char_start="4"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.parameter#'" name="p">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.parameter#'" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#)" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.action#_9PI74OJ7EeeMHK76VJaqWw" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="21" loc_char_start="20"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.guard#0" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.parameter#_sVOc4OHVEeeC1tehnGrBZh" name="a">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4eHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.guard#_sVOc4OHVEeeC1tehnGrBZk" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.action#_sVOc4eHVEeeC1tehnGrBZn" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="38" loc_char_start="37"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.parameter#_sVOc4OHVEeeC1tehnGrBZh" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.parameter#*" name="a">
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.parameter#*" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.guard#+" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+</rodin_index>
+<export_table>
+<export file="/atc/contexte0.buc">
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" name="ntmax"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0" name="contexte0"/>
+</export>
+<export file="/atc/machine0.bum">
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#," name="decoller"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-" name="atterrir"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" name="machine0"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" name="ntmax"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.variable#(" name="nt"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0" name="contexte0"/>
+</export>
+<export file="/atc/raffinement1.bum">
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#+" name="nbAvionsDecollage"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5" name="entrerPiste"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#\/" name="nbAvionsAtterrissage"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1" name="raffinement1"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#." name="atterrir"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-" name="decoller"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*" name="INITIALISATION"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" name="ntmax"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" name="machine0"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variable#2" name="nbAvionsTarmac"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6" name="sortirPiste"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0" name="contexte0"/>
+</export>
+<export file="/atc/contexte2.buc">
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#(" name="ensAvions"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#)" name="ensPistes"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2" name="contexte2"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#+" name="tarmac"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#*" name="clear"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" name="ntmax"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0" name="contexte0"/>
+</export>
+<export file="/atc/raffinement2.bum">
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#)" name="ensPistes"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#'" name="INITIALISATION"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;" name="accepterDemande"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@" name="refuserDemande"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.parameter#(" name="a"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#@|org.eventb.core.parameter#'" name="p"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#_1sQTIOHUEeeC1tehnGrBZh" name="pisteOK"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu|org.eventb.core.parameter#(" name="p"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv|org.eventb.core.parameter#'" name="p"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#*" name="ensAvionsTarmac"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.parameter#_sVPD8OHVEeeC1tehnGrBZi" name="a"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#;|org.eventb.core.parameter#'" name="p"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2" name="contexte2"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/" name="entrerPiste"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-|org.eventb.core.parameter#)" name="a"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.parameter#_sVOc4eHVEeeC1tehnGrBZi" name="a"/>
+<exported element="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1" name="raffinement1"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZv" name="libererPisteKO"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#*" name="clear"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.parameter#_sVOc4OHVEeeC1tehnGrBZh" name="a"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" name="ntmax"/>
+<exported element="/atc/machine0.bum|org.eventb.core.machineFile#machine0" name="machine0"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#_1sQTIOHUEeeC1tehnGrBZu" name="libererPisteOK"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#." name="atterrir"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#\/|org.eventb.core.parameter#_sVOc4eHVEeeC1tehnGrBZh" name="p"/>
+<exported element="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0" name="contexte0"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#(" name="ensAvions"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0" name="sortirPiste"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#_1sQTIOHUEeeC1tehnGrBZi" name="pisteKO"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#0|org.eventb.core.parameter#_sVPD8OHVEeeC1tehnGrBZh" name="p"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#9" name="demandeAcces"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#2" name="ensAvionsDecollage"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2" name="raffinement2"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.variable#5" name="ensAvionsAtterrissage"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#.|org.eventb.core.parameter#*" name="a"/>
+<exported element="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.constant#+" name="tarmac"/>
+<exported element="/atc/raffinement2.bum|org.eventb.core.machineFile#raffinement2|org.eventb.core.event#-" name="decoller"/>
+</export>
+</export_table>
+<graph is_sorted="true">
+<node label="/atc/contexte0.buc" mark="false" order_pos="0"/>
+<node label="/atc/machine0.bum" mark="false" order_pos="1">
+<predecessor label="/atc/contexte0.buc"/>
+</node>
+<node label="/atc/contexte2.buc" mark="false" order_pos="2">
+<predecessor label="/atc/contexte0.buc"/>
+</node>
+<node label="/atc/raffinement1.bum" mark="false" order_pos="3">
+<predecessor label="/atc/contexte0.buc"/>
+<predecessor label="/atc/machine0.bum"/>
+</node>
+<node label="/atc/raffinement2.bum" mark="false" order_pos="4">
+<predecessor label="/atc/raffinement1.bum"/>
+<predecessor label="/atc/contexte2.buc"/>
+</node>
+</graph>
+<unprocessed file="/atc/Contexte1.bcc"/>
+<unprocessed file="/atc/Contexte1.bpo"/>
+<unprocessed file="/atc/Contexte1.bpr"/>
+<unprocessed file="/atc/Contexte1.bps"/>
+<unprocessed file="/atc/contexte0.bcc"/>
+<unprocessed file="/atc/contexte0.bpo"/>
+<unprocessed file="/atc/contexte0.bpr"/>
+<unprocessed file="/atc/contexte0.bps"/>
+<unprocessed file="/atc/machine0.bcm"/>
+<unprocessed file="/atc/machine0.bpo"/>
+<unprocessed file="/atc/machine0.bpr"/>
+<unprocessed file="/atc/machine0.bps"/>
+<unprocessed file="/atc/raffinement1.bcm"/>
+<unprocessed file="/atc/raffinement1.bpo"/>
+<unprocessed file="/atc/raffinement1.bpr"/>
+<unprocessed file="/atc/raffinement1.bps"/>
+<unprocessed file="/atc/raffinement2.bcm"/>
+<unprocessed file="/atc/raffinement2.bpo"/>
+<unprocessed file="/atc/raffinement2.bpr"/>
+<unprocessed file="/atc/raffinement2.bps"/>
+<unprocessed file="/atc/raffinement2.bcm_tmp"/>
+<unprocessed file="/atc/raffinement2.bpo_tmp"/>
+<unprocessed file="/atc/raffinement1.bcm_tmp"/>
+<unprocessed file="/atc/contexte1.bpr"/>
+<unprocessed file="/atc/contexte1.bcc"/>
+<unprocessed file="/atc/contexte1.bpo"/>
+<unprocessed file="/atc/contexte1.bps"/>
+<unprocessed file="/atc/contexte2.bcc"/>
+<unprocessed file="/atc/contexte2.bpo"/>
+<unprocessed file="/atc/contexte2.bpr"/>
+<unprocessed file="/atc/contexte2.bps"/>
+</pim>
+<delta_list/>
+<indexer_registry>
+<registry_entry element_type="org.eventb.core.machineFile">
+<indexer id="machineIndexer"/>
+</registry_entry>
+<registry_entry element_type="org.eventb.core.contextFile">
+<indexer id="contextIndexer"/>
+</registry_entry>
+</indexer_registry>
+</index_root>

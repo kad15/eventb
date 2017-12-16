@@ -4,12 +4,9 @@
 %\paragraph{}
 \subsection{Analyse}
    On veut initialement considérer très peu d'exigences. L'énoncé nous indique
-   que seules les entrées et sorties de l'espace de l'aéroport sont étudiées. On effectue donc une étude formelle sur un système très simplifié où la piste et le tarmac ne sont pas différenciés. Nous étudions uniquement les échanges d'avions entre l'espace de l'aéroport et l'espace extérieur, ce qu'on modélise en utilisant deux events\footnote{un event est nommé transition dans la sémantique des machines à états finis. C'est un couple (garde/action). L'action s'exécute si la garde est vraie.}, decoller et atterrir :
+   que seules les entrées et sorties de l'espace de l'aéroport sont étudiées. On effectue donc une étude formelle sur un système très simplifié où la piste et le tarmac ne sont pas différenciés. Nous étudions uniquement les échanges d'avions entre l'espace de l'aéroport et l'espace extérieur, ce qu'on modélise en utilisant deux events\footnote{un event est nommé transition dans la sémantique des machines à états finis. C'est un couple (garde/action). L'action s'exécute si la garde est vraie.} : decoller et atterrir.
    
-   \begin{itemize}
-   	\item extout lorsqu'un avion sort de l'espace extérieur pour rentrer dans l'espace aéroportuaire,
-   	\item extin lorsqu'un avion entre dans l'espace extérieur.
-   \end{itemize} 
+  
 
 \begin{figure}[H]
 	\begin{center}	
@@ -25,7 +22,7 @@ L'état statique du système, nommé contexte dans la sémantique event-b, est c
 \begin{figure}[H]
 	\begin{center}	
 		\includegraphics[scale=0.8]{images/0/ctx0}
-		\caption{Etat statique du système}
+		\caption{Etat statique du système avec deux axiomes redondants}
 		\label{ctx0}
 	\end{center}
 \end{figure}
@@ -45,8 +42,8 @@ On fait abstraction de la piste. Ainsi, la seule variable à considérer est le 
 
 
 \subsection{Preuves}
-Pour débuguer le modèle formel initial, il a fallu ajouter deux gardes pour garantir un nombre d'avions compris entre 0 et 20 et éviter les deadlock.
-Une preuve interactive, dans la perspective "proving", icône PP du "Proof control Panel", est nécessaire pour démontrer le thérorème d'invariant DLF0 pour prendre en compte toutes les hypothèses. C'est à ce stade que les règles d'inférences, en l'occurrence MON et OR\_L, mettent en évidence qu'un axiome supplémentaire est nécessaire qui impose ntmax > 0. Ici, on fixe ntmax = 20. En effet, si ntmax = 0, le système est bloqué dès l'origine. 
+Pour déboguer le modèle formel initial, il a fallu ajouter deux gardes pour garantir un nombre d'avions compris entre 0 et 20 et éviter les deadlock.
+Une preuve interactive, dans la perspective "proving", icône PP du "Proof control Panel", est nécessaire pour démontrer le thérorème\footnote{un théorème d'invariant est dépendant d'autres invariants placés avant} d'invariant DLF0 pour prendre en compte toutes les hypothèses. C'est à ce stade que les règles d'inférences, en l'occurrence MON et OR\_L, mettent en évidence qu'un axiome supplémentaire est nécessaire qui impose ntmax > 0. Ici, on fixe ntmax = 20. En effet, si ntmax = 0, le système est bloqué dès l'origine. 
 
 \begin{figure}[H]
 	\begin{center}	

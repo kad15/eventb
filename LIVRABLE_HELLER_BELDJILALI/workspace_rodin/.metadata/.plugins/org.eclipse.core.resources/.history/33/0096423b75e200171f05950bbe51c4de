@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
+<org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/atc/contexte0.bcc|org.eventb.core.scContextFile#contexte0" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.extendsContext#'"/>
+<org.eventb.core.scInternalContext name="contexte0">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="ntmax∈ℕ" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="ntmax&gt;0" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_gTX2IOI5EeetmvWmBRd61g" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="ntmax=20" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_FtZ5wOJdEeecA88TaccdHg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="ntmax" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.constant#'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scCarrierSet name="ensAvions" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(ensAvions)"/>
+<org.eventb.core.scCarrierSet name="ensPistes" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(ensPistes)"/>
+</org.eventb.core.scContextFile>

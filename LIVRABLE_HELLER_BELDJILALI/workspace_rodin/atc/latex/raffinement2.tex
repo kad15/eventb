@@ -1,0 +1,155 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage{bsymb,b2latex}
+\begin{document}
+\SingleHeader{raffinement2}
+\MACHINE{raffinement2}{raffinement1}{contexte2}{\\machine pour prendre en compte les autorisations accès piste}
+\VARIABLES{
+	\Variable{ensAvionsTarmac}{ensemble avions sur tarmac inclus dans ensAvions}
+	\Variable{ensAvionsDecollage}{ensemble avion sur piste decollage inclus dans ensAvions}
+	\Variable{ensAvionsAtterrissage}{ensemble avion sur piste atterrisage inclus dans ensAvions}
+	\Variable{demandeAcces}{demande d'acces}
+	\Variable{pisteOK}{ensemble de pistes dont l'accès a été autorisée à un avion}
+	\Variable{pisteKO}{ensemble de pistes dont l'accès a été refusé à un avion}
+}
+\INVARIANTS{
+	\Invariant{inv1}{false}{$ensAvionsTarmac \subseteq{} ensAvions$}{\\inclus dans ensAvions}
+	\Invariant{inv2}{false}{$ensAvionsDecollage \subseteq{} ensAvions$}{\\inclus dans ensAvions}
+	\Invariant{inv3}{false}{$ensAvionsAtterrissage \subseteq{} ensAvions$}{\\inclus dans ensAvions}
+	\Invariant{inv4}{false}{$ensAvionsTarmac \bunion{} ensAvionsDecollage \bunion{} ensAvionsAtterrissage \subseteq{} dom(clear)$}{}
+	\Invariant{inv5}{false}{$demandeAcces \subseteq{} clear$}{\\une demande d'accès est une clearance}
+	\Invariant{inv6}{false}{$demandeAcces \in{} ensAvions \pinj{} ensPistes\setminus{}\{tarmac\}$}{\\injection partielle entre les avions et les pistes hors tarmac}
+	\Invariant{inv7}{false}{$ensAvionsTarmac \binter{} ensAvionsDecollage = \emptyset{}$}{}
+	\Invariant{inv8}{false}{$ensAvionsDecollage \binter{} ensAvionsAtterrissage = \emptyset{}$}{}
+	\Invariant{inv9}{false}{$finite(ensAvionsTarmac)$}{\\ensembles finis pour facilité la tâche du prouver}
+	\Invariant{inv10}{false}{$finite(ensAvionsDecollage)$}{\\ensembles finis}
+	\Invariant{inv11}{false}{$finite(ensAvionsAtterrissage)$}{\\ensembles finis}
+	\Invariant{inv12}{false}{$pisteOK \subseteq{} ensPistes$}{}
+	\Invariant{inv13}{false}{$pisteKO \subseteq{} ensPistes$}{}
+	\Invariant{inv14}{false}{$finite(pisteKO)$}{\\ensembles finis}
+	\Invariant{inv15}{false}{$finite(pisteOK)$}{\\ensembles finisment}
+	\Invariant{inv16}{false}{$nbAvionsDecollage=card(ensAvionsDecollage)$}{\\invariant de glue avec raffinement1}
+	\Invariant{inv17}{false}{$nbAvionsTarmac=card(ensAvionsTarmac)$}{\\invariant de glue avec raffinement1}
+	\Invariant{inv18}{false}{$nbAvionsAtterrissage=card(ensAvionsAtterrissage)$}{\\invariant de glue avec raffinement1}
+}
+\EVENTS{
+\INITIALISATION{false}{}{
+	\ACTIONS{false}{
+		\Action{act1}{$ensAvionsTarmac \bcmeq{} \emptyset{}$}{true}{}
+		\Action{act2}{$ensAvionsDecollage \bcmeq{} \emptyset{}$}{true}{}
+		\Action{act3}{$ensAvionsAtterrissage \bcmeq{} \emptyset{}$}{true}{}
+		\Action{act5}{$demandeAcces\bcmeq{}\emptyset{}$}{true}{}
+		\Action{act6}{$pisteOK \bcmeq{} \emptyset{}$}{true}{}
+		\Action{act7}{$pisteKO \bcmeq{} \emptyset{}$}{true}{}
+	}
+}
+\EVT{decoller}{false}{ordinary}{decoller}{}{
+	\ANY{
+		\Param{a}{true}{un avion}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$a \in{} ensAvionsDecollage$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$ensAvionsDecollage\bcmeq{}ensAvionsDecollage\setminus{}\{a\}$}{true}{}
+	}
+}
+\EVT{atterrir}{false}{ordinary}{atterrir}{}{
+	\ANY{
+		\Param{a}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$a \in{} ensAvions$}{true}{}
+		\Guard{grd2}{false}{$card(ensAvionsAtterrissage) +card(ensAvionsTarmac)< ntmax$}{true}{}
+		\Guard{grd3}{false}{$ensAvionsDecollage = \emptyset{}$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$ensAvionsAtterrissage \bcmeq{} ensAvionsAtterrissage \Union{} \{a\}$}{true}{}
+	}
+}
+\EVT{entrerPiste}{false}{ordinary}{entrerPiste}{}{
+	\ANY{
+		\Param{a}{true}{}
+		\Param{p}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$a \in{} ensAvionsTarmac$}{true}{}
+		\Guard{grd2}{false}{$p \in{} pisteOK$}{true}{}
+		\Guard{grd3}{false}{$ensAvionsAtterrissage=\emptyset{}$}{true}{}
+		\Guard{grd4}{false}{$a\mapsto{}p \in{} demandeAcces$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$ensAvionsTarmac \bcmeq{} ensAvionsTarmac \setminus{} \{a\}$}{true}{}
+		\Action{act2}{$ensAvionsDecollage \bcmeq{} ensAvionsDecollage \Union{} \{a\}$}{true}{}
+	}
+}
+\EVT{sortirPiste}{false}{ordinary}{sortirPiste}{}{
+	\ANY{
+		\Param{a}{true}{}
+		\Param{p}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$a \in{} ensAvionsAtterrissage$}{true}{}
+		\Guard{grd2}{false}{$p \in{} pisteOK$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$ensAvionsTarmac \bcmeq{} ensAvionsTarmac \Union{} \{a\}$}{true}{}
+		\Action{act2}{$ensAvionsAtterrissage \bcmeq{} ensAvionsAtterrissage \setminus{} \{a\}$}{true}{}
+	}
+}
+\EVT{accepterDemande}{false}{ordinary}{}{}{
+	\ANY{
+		\Param{a}{true}{un avion}
+		\Param{p}{true}{une piste}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$a \in{} ensAvions$}{true}{\\a est un avion}
+		\Guard{grd2}{false}{$p \in{} ensPistes\setminus{}\{tarmac\}$}{true}{\\la piste est une piste mais pas un tarmac}
+		\Guard{grd3}{false}{$a \notin{} dom(demandeAcces)$}{true}{\\a ne fait pas partie du domaine}
+		\Guard{grd4}{false}{$p \notin{} ran(demandeAcces)$}{true}{\\p ne fait pas partie de l'image de la realtion a vers p}
+		\Guard{grd5}{false}{$a\mapsto{}p \in{} clear$}{true}{}
+		\Guard{grd6}{false}{$p \notin{} pisteOK \bunion{} pisteKO$}{true}{\\l'avion n'est ni en attente ni déjà autorisé à accéder piste p}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$demandeAcces(a) \bcmeq{} p$}{true}{}
+	}
+}
+\EVT{refuserDemande}{false}{ordinary}{}{}{
+	\ANY{
+		\Param{a}{true}{un avion}
+		\Param{p}{true}{une piste}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$a \in{} ensAvions$}{true}{}
+		\Guard{grd2}{false}{$p \in{} ensPistes\setminus{}\{tarmac\}$}{true}{}
+		\Guard{grd3}{false}{$p \notin{} pisteOK \bunion{} pisteKO$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$pisteKO \bcmeq{} pisteKO \setminus{}\{p\}$}{true}{}
+	}
+}
+\EVT{libererPisteOK}{false}{ordinary}{}{}{
+	\ANY{
+		\Param{p}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$p \in{} pisteOK$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$pisteOK \bcmeq{} pisteOK \setminus{}\{p\}$}{true}{}
+		\Action{act2}{$demandeAcces \bcmeq{} demandeAcces\ransub{}\{p\}$}{true}{}
+	}
+}
+\EVT{libererPisteKO}{false}{ordinary}{}{}{
+	\ANY{
+		\Param{p}{true}{}
+	}
+	\GUARDS{true}{
+		\Guard{grd1}{false}{$p \in{} pisteKO$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$pisteKO \bcmeq{} pisteKO \setminus{}\{p\}$}{true}{}
+	}
+}
+}
+\END
+\end{document}

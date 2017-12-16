@@ -1,0 +1,26 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage{bsymb,b2latex}
+\begin{document}
+\SingleHeader{Contexte1}
+\CONTEXT{Contexte1}{contexte0}{}
+\SETS{
+	\Set{piste}{}
+	\Set{avion}{}
+	\Set{statutPiste}{}
+}
+\CONSTANTS{
+	\Constant{autorisation}{}
+	\Constant{tarmac}{}
+	\Constant{OK}{}
+	\Constant{KO}{}
+	\Constant{Neutre}{}
+}
+\AXIOMS{
+	\Axiom{axm1}{false}{$finite(avion)$}{}
+	\Axiom{axm2}{false}{$autorisation \in{} avion\rel{}piste$}{}
+	\Axiom{axm3}{false}{$tarmac \in{} piste$}{}
+	\Axiom{axm4}{false}{$avion \cprod{} \{tarmac\} \subseteq{} autorisation$}{}
+	\Axiom{axm5}{false}{$partition(statutPiste, \{OK\}, \{KO\}, \{Neutre\})$}{}
+}
+\END
+\end{document}

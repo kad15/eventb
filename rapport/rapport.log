@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.11.17)  16 DEC 2017 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.11.17)  16 DEC 2017 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1237,9 +1237,6 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
 LaTeX Warning: Label `ctx' multiply defined.
 
-
-LaTeX Warning: Label `raf1' multiply defined.
-
 )
 \openout1 = `rapport.aux'.
 
@@ -1369,7 +1366,7 @@ LaTeX Info: Redefining \nameref on input line 124.
 (d:/prog/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<images/ctrl2.jpg, id=115, 289.08pt x 192.72pt>
+<images/ctrl2.jpg, id=127, 289.08pt x 192.72pt>
 File: images/ctrl2.jpg Graphic file (type jpg)
 <use images/ctrl2.jpg>
 Package pdftex.def Info: images/ctrl2.jpg  used on input line 32. on input line
@@ -1442,11 +1439,11 @@ l.3
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ))
 (./sections/partie_2.tex
-<images/ctx.png, id=149, 1502.08235pt x 714.19765pt>
-File: images/ctx.png Graphic file (type png)
-<use images/ctx.png>
-Package pdftex.def Info: images/ctx.png  used on input line 10. on input line 1
-0.
+<images/0/ctx.png, id=164, 1502.08235pt x 714.19765pt>
+File: images/0/ctx.png Graphic file (type png)
+<use images/0/ctx.png>
+Package pdftex.def Info: images/0/ctx.png  used on input line 10. on input line
+ 10.
 Package pdftex.def Info: Requested size: 450.62819pt x 214.26094pt on input lin
 e 10.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 11.
@@ -1458,122 +1455,103 @@ LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <12> not available
 (Font)              Font shape `T1/lmr/m/sc' tried instead on input line 11.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
  []\T1/lmss/bx/n/12 Exigence| 
  []
 
 
-Overfull \hbox (21.46405pt too wide) in paragraph at lines 38--71
+Overfull \hbox (21.46405pt too wide) in paragraph at lines 34--67
  [][] 
  []
 
-[3 <./images/ctx.png>]) (./sections/partie_3.tex
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 10.
-
-LaTeX Font Info:    No file OMSlmss.fd. on input line 10.
-
-
-LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 10.
-
-<images/0/mod0.png, id=167, 1275.35294pt x 629.17412pt>
+[3 <./images/0/ctx.png>]) (./sections/partie_3.tex
+<images/0/mod0.png, id=182, 1275.35294pt x 629.17412pt>
 File: images/0/mod0.png Graphic file (type png)
 <use images/0/mod0.png>
-Package pdftex.def Info: images/0/mod0.png  used on input line 16. on input lin
-e 16.
+Package pdftex.def Info: images/0/mod0.png  used on input line 13. on input lin
+e 13.
 Package pdftex.def Info: Requested size: 510.13214pt x 251.66518pt on input lin
-e 16.
+e 13.
 
-Overfull \hbox (26.43527pt too wide) in paragraph at lines 16--17
+Overfull \hbox (26.43527pt too wide) in paragraph at lines 13--14
  [] 
  []
 
 [4]
-<images/0/ctx0.png, id=178, 225.2415pt x 210.7875pt>
+<images/0/ctx0.png, id=191, 225.2415pt x 210.7875pt>
 File: images/0/ctx0.png Graphic file (type png)
 <use images/0/ctx0.png>
-Package pdftex.def Info: images/0/ctx0.png  used on input line 27. on input lin
-e 27.
+Package pdftex.def Info: images/0/ctx0.png  used on input line 24. on input lin
+e 24.
 Package pdftex.def Info: Requested size: 180.19344pt x 168.63022pt on input lin
-e 27.
+e 24.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 35.
-<images/0/machine0.png, id=180, 296.90926pt x 499.26524pt>
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 32.
+<images/0/machine0.png, id=193, 296.90926pt x 499.26524pt>
 File: images/0/machine0.png Graphic file (type png)
 <use images/0/machine0.png>
-Package pdftex.def Info: images/0/machine0.png  used on input line 39. on input
- line 39.
+Package pdftex.def Info: images/0/machine0.png  used on input line 36. on input
+ line 36.
 Package pdftex.def Info: Requested size: 296.90852pt x 499.26402pt on input lin
-e 39.
+e 36.
  [5 <./images/0/mod0.png> <./images/0/ctx0.png>]
-<images/0/proof0.png, id=189, 165.61874pt x 169.23225pt>
+<images/0/proof0.png, id=203, 165.61874pt x 169.23225pt>
 File: images/0/proof0.png Graphic file (type png)
 <use images/0/proof0.png>
-Package pdftex.def Info: images/0/proof0.png  used on input line 53. on input l
-ine 53.
+Package pdftex.def Info: images/0/proof0.png  used on input line 50. on input l
+ine 50.
 Package pdftex.def Info: Requested size: 132.49516pt x 135.38599pt on input lin
-e 53.
+e 50.
  [6 <./images/0/machine0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
  []\T1/lmss/bx/n/12 Exigence| 
  []
 
 
-Overfull \hbox (21.46405pt too wide) in paragraph at lines 65--100
+Overfull \hbox (21.46405pt too wide) in paragraph at lines 62--97
  [][] 
  []
 
 ) (./sections/partie_4.tex
-<images/1/env2.png, id=197, 1502.08235pt x 715.6147pt>
-File: images/1/env2.png Graphic file (type png)
-<use images/1/env2.png>
-Package pdftex.def Info: images/1/env2.png  used on input line 8. on input line
- 8.
-Package pdftex.def Info: Requested size: 450.62819pt x 214.68607pt on input lin
-e 8.
-<images/1/raf1.png, id=198, 1264.01646pt x 384.02293pt>
-File: images/1/raf1.png Graphic file (type png)
-<use images/1/raf1.png>
-Package pdftex.def Info: images/1/raf1.png  used on input line 15. on input lin
-e 15.
-Package pdftex.def Info: Requested size: 505.59763pt x 153.60645pt on input lin
-e 15.
-
-Overfull \hbox (21.90076pt too wide) in paragraph at lines 15--16
- [] 
- []
-
-[7 <./images/0/proof0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
  []\T1/lmss/bx/n/12 Exigence| 
  []
 
 
-Overfull \hbox (21.46405pt too wide) in paragraph at lines 24--59
+Overfull \hbox (21.46405pt too wide) in paragraph at lines 11--46
  [][] 
  []
 
-[8 <./images/1/env2.png> <./images/1/raf1.png>]
+[7 <./images/0/proof0.png>]
+<images/1/env2.png, id=219, 1502.08235pt x 715.6147pt>
+File: images/1/env2.png Graphic file (type png)
+<use images/1/env2.png>
+Package pdftex.def Info: images/1/env2.png  used on input line 51. on input lin
+e 51.
+Package pdftex.def Info: Requested size: 450.62819pt x 214.68607pt on input lin
+e 51.
+<images/1/raf1.png, id=220, 1264.01646pt x 384.02293pt>
 File: images/1/raf1.png Graphic file (type png)
 <use images/1/raf1.png>
-Package pdftex.def Info: images/1/raf1.png  used on input line 71. on input lin
-e 71.
+Package pdftex.def Info: images/1/raf1.png  used on input line 58. on input lin
+e 58.
 Package pdftex.def Info: Requested size: 505.59763pt x 153.60645pt on input lin
-e 71.
+e 58.
 
-Overfull \hbox (21.90076pt too wide) in paragraph at lines 71--72
+Overfull \hbox (21.90076pt too wide) in paragraph at lines 58--59
  [] 
  []
 
-<images/1/ctx1.png, id=212, 225.2415pt x 210.7875pt>
+[8 <./images/1/env2.png>]
+<images/1/ctx1.png, id=227, 225.2415pt x 210.7875pt>
 File: images/1/ctx1.png Graphic file (type png)
 <use images/1/ctx1.png>
 Package pdftex.def Info: images/1/ctx1.png  used on input line 82. on input lin
 e 82.
-Package pdftex.def Info: Requested size: 90.09499pt x 84.3135pt on input line 8
-2.
-[9] (d:/prog/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-34.def
+Package pdftex.def Info: Requested size: 225.24094pt x 210.78699pt on input lin
+e 82.
+
+(d:/prog/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-34.def
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
 Overfull \hbox (10.8185pt too wide) in paragraph at lines 92--93
@@ -1582,41 +1560,118 @@ Overfull \hbox (10.8185pt too wide) in paragraph at lines 92--93
 L/lmm/m/it/12 nbAvionsAtterrissage$
  []
 
-<images/1/proof1.png, id=220, 172.2435pt x 445.665pt>
-File: images/1/proof1.png Graphic file (type png)
-<use images/1/proof1.png>
-Package pdftex.def Info: images/1/proof1.png  used on input line 103. on input 
-line 103.
-Package pdftex.def Info: Requested size: 258.36461pt x 668.49586pt on input lin
-e 103.
-[10 <./images/1/ctx1.png>]
-<images/1/machine1.pdf, id=230, pagebox=cropbox, 597.50829pt x 845.0471pt>
+[9 <./images/1/raf1.png> <./images/1/ctx1.png>]
+<images/1/machine1.pdf, id=236, pagebox=cropbox, 597.50829pt x 845.0471pt>
 File: images/1/machine1.pdf Graphic file (type pdf)
 <use images/1/machine1.pdf>
-Package pdftex.def Info: images/1/machine1.pdf  used on input line 113. on inpu
-t line 113.
+Package pdftex.def Info: images/1/machine1.pdf  used on input line 98. on input
+ line 98.
 Package pdftex.def Info: Requested size: 478.00728pt x 676.0386pt on input line
- 113.
- [11 <./images/1/proof1.png>])
-(./sections/partie_5.tex) (./intro_conclusion/conclusion.tex) [12 <./images/1/m
-achine1.pdf>] [13] (./page-de-couverture/page_blanche.tex)
-(./page-de-couverture/quatrieme-de-couv.tex [14])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 169.
-<images/ctrl1.jpg, id=294, 523.02832pt x 784.64572pt>
+ 98.
+ [10]
+<images/1/proof1.png, id=244, 172.2435pt x 445.665pt>
+File: images/1/proof1.png Graphic file (type png)
+<use images/1/proof1.png>
+Package pdftex.def Info: images/1/proof1.png  used on input line 110. on input 
+line 110.
+Package pdftex.def Info: Requested size: 206.69115pt x 534.79532pt on input lin
+e 110.
+ [11 <./images/1/machine1.pdf>]) (./sections/partie_5.tex [12 <./images/1/proof
+1.png>]
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 13.
+
+LaTeX Font Info:    No file OMSlmss.fd. on input line 13.
+
+
+LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 13.
+
+<images/2/ctx2.png, id=298, 493.24275pt x 367.3725pt>
+File: images/2/ctx2.png Graphic file (type png)
+<use images/2/ctx2.png>
+Package pdftex.def Info: images/2/ctx2.png  used on input line 22. on input lin
+e 22.
+Package pdftex.def Info: Requested size: 345.26756pt x 257.15898pt on input lin
+e 22.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 33.
+(d:/prog/texlive/2017/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+pdfTeX warning: pdflatex.exe (file ./images/2/raf21.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
+<images/2/raf21.pdf, id=301, pagebox=cropbox, 597.55246pt x 845.07724pt>
+File: images/2/raf21.pdf Graphic file (type pdf)
+<use images/2/raf21.pdf>
+Package pdftex.def Info: images/2/raf21.pdf  used on input line 36. on input li
+ne 36.
+Package pdftex.def Info: Requested size: 448.16324pt x 633.80638pt on input lin
+e 36.
+
+Overfull \hbox (1.21736pt too wide) in paragraph at lines 32--40
+\T1/lmtt/m/n/12 github . com / kad15 / eventb / tree / master / LIVRABLE _ HELL
+ER _ BELDJILALI / workspace _ rodin$[][]\T1/lmss/m/n/12 . 
+ []
+
+[13 <./images/2/ctx2.png>]
+
+pdfTeX warning: pdflatex.exe (file ./images/2/raf22.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
+<images/2/raf22.pdf, id=312, pagebox=cropbox, 597.55246pt x 845.07724pt>
+File: images/2/raf22.pdf Graphic file (type pdf)
+<use images/2/raf22.pdf>
+Package pdftex.def Info: images/2/raf22.pdf  used on input line 45. on input li
+ne 45.
+Package pdftex.def Info: Requested size: 448.16324pt x 633.80638pt on input lin
+e 45.
+[14 <./images/2/raf21.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./images/2/raf23.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
+<images/2/raf23.pdf, id=319, pagebox=cropbox, 597.55246pt x 845.07724pt>
+File: images/2/raf23.pdf Graphic file (type pdf)
+<use images/2/raf23.pdf>
+Package pdftex.def Info: images/2/raf23.pdf  used on input line 55. on input li
+ne 55.
+Package pdftex.def Info: Requested size: 448.16324pt x 633.80638pt on input lin
+e 55.
+[15 <./images/2/raf22.pdf>]
+<images/2/proof2.png, id=326, 174.6525pt x 504.6855pt>
+File: images/2/proof2.png Graphic file (type png)
+<use images/2/proof2.png>
+Package pdftex.def Info: images/2/proof2.png  used on input line 68. on input l
+ine 68.
+Package pdftex.def Info: Requested size: 130.98904pt x 378.5132pt on input line
+ 68.
+ [16 <./images/2/raf23.pdf>]) [17 <./images/2/proof2.png>] (./intro_conclusion/
+conclusion.tex) [18] (./rapport.lof)
+\tf@lof=\write8
+\openout8 = `rapport.lof'.
+
+ [19]
+(./rapport.lot)
+\tf@lot=\write9
+\openout9 = `rapport.lot'.
+
+ [20] (./page-de-couverture/page_blanche.tex)
+(./page-de-couverture/quatrieme-de-couv.tex [21])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+<images/ctrl1.jpg, id=380, 523.02832pt x 784.64572pt>
 File: images/ctrl1.jpg Graphic file (type jpg)
 <use images/ctrl1.jpg>
-Package pdftex.def Info: images/ctrl1.jpg  used on input line 169. on input lin
-e 169.
+Package pdftex.def Info: images/ctrl1.jpg  used on input line 173. on input lin
+e 173.
 Package pdftex.def Info: Requested size: 866.42314pt x 845.0581pt on input line
- 169.
- [15 <./images/ctrl1.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
+ 173.
+ [22 <./images/ctrl1.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
 
 (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 85713EFC380E3521F56317C25C07BAE6;1352.
+(rerunfilecheck)             Checksum: D74E473C9745D9CDF3AF103C9CBEFE2B;1486.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1624,40 +1679,42 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 28244 strings out of 492985
- 517248 string characters out of 6133958
- 925177 words of memory out of 5000000
- 31034 multiletter control sequences out of 15000+600000
- 60396 words of font info for 61 fonts, out of 8000000 for 9000
+ 28340 strings out of 492985
+ 518765 string characters out of 6133958
+ 930177 words of memory out of 5000000
+ 31098 multiletter control sequences out of 15000+600000
+ 60714 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,16n,82p,925b,616s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/prog/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/prog/te
-xlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/prog/texlive/2017/texmf-
-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/prog/texlive/2017/texmf-dist/fonts/en
-c/dvips/lm/lm-ec.enc}<d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmex10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi9.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:
-/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/pro
-g/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/prog/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><d:/prog/texlive/
-2017/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><d:/prog/texlive/2017/texmf-d
-ist/fonts/type1/public/lm/lmmi12.pfb><d:/prog/texlive/2017/texmf-dist/fonts/typ
-e1/public/lm/lmr12.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/l
-mss10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:
-/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb><d:/prog/texlive/
-2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/prog/texlive/2017/texmf-
-dist/fonts/type1/public/lm/lmsso12.pfb><d:/prog/texlive/2017/texmf-dist/fonts/t
-ype1/public/lm/lmsy10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb>
-Output written on rapport.pdf (16 pages, 6856906 bytes).
+{d:/prog/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{d:/prog/te
+xlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/prog/texlive/2017/texmf-
+dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/prog/texlive/2017/texmf-dist/fonts/en
+c/dvips/lm/lm-rm.enc}{d:/prog/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mat
+hit.enc}<d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<d:/prog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/p
+rog/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/prog/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/prog/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/prog/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/prog/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><d:/prog/texlive/2017/texmf-di
+st/fonts/type1/public/lm/lmcsc10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/typ
+e1/public/lm/lmex10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/
+lmmi12.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:
+/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss10.pfb><d:/prog/texlive
+/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb><d:/prog/texlive/2017/texmf-d
+ist/fonts/type1/public/lm/lmss8.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type
+1/public/lm/lmssbx10.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm
+/lmsso12.pfb><d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+<d:/prog/texlive/2017/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><d:/prog/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on rapport.pdf (23 pages, 7325526 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

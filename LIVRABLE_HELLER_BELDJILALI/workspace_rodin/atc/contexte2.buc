@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.extendsContext name="'" org.eventb.core.target="contexte0"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.comment="set of planes" org.eventb.core.identifier="ensAvions"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.comment="ensemble de pistes" org.eventb.core.identifier="ensPistes"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.comment="cte clearance" org.eventb.core.identifier="clear"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.comment="cte tarmac" org.eventb.core.identifier="tarmac"/>
+<org.eventb.core.axiom name="," org.eventb.core.comment="relation binaire entre ensembles avions et pistes" org.eventb.core.label="axm1" org.eventb.core.predicate="clear ∈ ensAvions ↔ ensPistes "/>
+<org.eventb.core.axiom name="-" org.eventb.core.comment="le tarmac est élément de ensPistes" org.eventb.core.label="axm2" org.eventb.core.predicate="tarmac ∈ ensPistes"/>
+<org.eventb.core.axiom name="." org.eventb.core.comment="tous les avions sont autorisés à se strouver sur le tarmac" org.eventb.core.label="axm3" org.eventb.core.predicate="ensAvions × {tarmac}⊆ clear" org.eventb.core.theorem="true"/>
+</org.eventb.core.contextFile>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.comment="machine pour prendre en compte les autorisations accès piste" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1513449508781" org.eventb.texttools.text_representation="machine raffinement2 // machine pour prendre en compte les autorisations accès piste&#10; refines raffinement1  sees contexte2&#10;&#10;variables ensAvionsTarmac // ensemble avions sur tarmac inclus dans ensAvions&#10;          ensAvionsDecollage // ensemble avion sur piste decollage inclus dans ensAvions&#10;          ensAvionsAtterrissage // ensemble avion sur piste atterrisage inclus dans ensAvions&#10;          demandeAcces // demande d'acces&#10;          pisteOK // piste dont l'accès a été autorisée à un avion&#10;          pisteKO // piste dont l'accès a été refusé à un avion&#10;&#10;&#10;invariants&#10;  @inv1 ensAvionsTarmac ⊆ ensAvions // inclus dans ensAvions&#10;  @inv2 ensAvionsDecollage ⊆ ensAvions // inclus dans ensAvions&#10;  @inv3 ensAvionsAtterrissage ⊆ ensAvions // inclus dans ensAvions&#10;  @inv4 ensAvionsTarmac ∪ ensAvionsDecollage ∪ ensAvionsAtterrissage ⊆ dom(clear)&#10;  @inv5 demandeAcces ⊆ clear // une demande d'accès est une clearance&#10;  @inv6 demandeAcces ∈ ensAvions ⤔ ensPistes∖{tarmac}&#10;  @inv7 ensAvionsTarmac ∩ ensAvionsDecollage = ∅&#10;  @inv8 ensAvionsDecollage ∩ ensAvionsAtterrissage = ∅&#10;  @inv9 finite(ensAvionsTarmac) // ensembles finis pour facilité la tâche du prover&#10;  @inv10 finite(ensAvionsDecollage) // ensembles finis&#10;  @inv11 finite(ensAvionsAtterrissage) // ensembles finis&#10;  @inv12 pisteOK ⊆ ensPistes&#10;  @inv13 pisteKO ⊆ ensPistes&#10;  @inv14 finite(pisteKO) // ensembles finis&#10;  @inv15 finite(pisteOK) // ensembles finisment&#10;  @inv16 nbAvionsDecollage=card(ensAvionsDecollage) // invariant de glue avec raffinement1&#10;  @inv17 nbAvionsTarmac=card(ensAvionsTarmac) // invariant de glue avec raffinement1&#10;  @inv18 nbAvionsAtterrissage=card(ensAvionsAtterrissage) // invariant de glue avec raffinement1&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 ensAvionsTarmac ≔ ∅&#10;      @act2 ensAvionsDecollage ≔ ∅&#10;      @act3 ensAvionsAtterrissage ≔ ∅&#10;      @act5 demandeAcces≔∅&#10;      @act6 pisteOK ≔ ∅&#10;      @act7 pisteKO ≔ ∅&#10;  end&#10;&#10;  event decoller refines decoller&#10;    any a // un avion&#10;&#10;    where&#10;        @grd1 a ∈ ensAvionsDecollage&#10;&#10;    then&#10;      @act1 ensAvionsDecollage≔ensAvionsDecollage∖{a}&#10;  end&#10;&#10;  event atterrir refines atterrir&#10;    any a&#10;    where&#10;      @grd1 a ∈ ensAvions&#10;      @grd2 card(ensAvionsAtterrissage) +card(ensAvionsTarmac)&lt; ntmax&#10;      @grd3 card(ensAvionsDecollage)=0&#10;    then&#10;      @act1 a :∈  ensAvionsAtterrissage&#10;  end&#10;&#10;  event entrerPiste refines entrerPiste&#10;    any a p&#10;    where&#10;      @grd1 a ∈ ensAvionsTarmac&#10;      @grd2 p ∈ pisteOK&#10;      @grd3 card(ensAvionsAtterrissage)=0&#10;      @grd4 a↦p ∈ demandeAcces&#10;    then&#10;      @act1 ensAvionsTarmac ≔ ensAvionsTarmac ∖ {a}&#10;      @act2 a :∈ ensAvionsDecollage&#10;  end&#10;&#10;  event sortirPiste refines sortirPiste&#10;    any a p&#10;    where&#10;      @grd1 a ∈ ensAvionsAtterrissage&#10;      @grd2 p ∈ pisteOK&#10;    then&#10;      @act1 a:∈  ensAvionsTarmac&#10;      @act2 ensAvionsAtterrissage ≔ ensAvionsAtterrissage ∖ {a}&#10;  end&#10;&#10;  event accepterDemande&#10;    any a // un avion&#10;        p // une piste&#10;&#10;    where&#10;      @grd1 a ∈ ensAvions // a est un avion&#10;      @grd2 p ∈ ensPistes∖{tarmac} // la piste est une piste mais pas un tarmac&#10;      @grd3 a ∉ dom(demandeAcces) // a ne fait pas partie du domaine&#10;      @grd4 p ∉ ran(demandeAcces) // p ne fait pas partie de l'image de la realtion a vers p&#10;      @grd5 a↦p ∈ clear&#10;      @grd6 p ∉ pisteOK ∪ pisteKO // l'avion n'est ni en attente ni déjà autorisé à accéder piste p&#10;    then&#10;      @act1 demandeAcces(a) ≔ p&#10;  end&#10;&#10;  event refuserDemande&#10;    any a // un avion&#10;        p // une piste&#10;&#10;    where&#10;      @grd1 a ∈ ensAvions&#10;      @grd2 p ∈ ensPistes∖{tarmac}&#10;      @grd3 p ∉ pisteOK ∪ pisteKO&#10;    then&#10;      @act1 pisteKO ≔ pisteKO ∖{p}&#10;  end&#10;&#10;  event libererPisteOK&#10;    any p&#10;    where&#10;      @grd1 p ∈ pisteOK&#10;    then&#10;      @act1 pisteOK ≔ pisteOK ∖{p}&#10;      @act2 demandeAcces ≔ demandeAcces⩥{p}&#10;  end&#10;&#10;  event libererPisteKO&#10;    any p&#10;    where&#10;      @grd1 p ∈ pisteKO&#10;    then&#10;      @act1 pisteKO ≔ pisteKO ∖{p}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name="_1sPsEOHUEeeC1tehnGrBZg" org.eventb.core.target="raffinement1"/>
+<org.eventb.core.seesContext name="_1sQTIOHUEeeC1tehnGrBZg" org.eventb.core.target="contexte2"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="ensAvionsTarmac ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="ensAvionsDecollage ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="ensAvionsAtterrissage ≔ ∅" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="demandeAcces≔∅" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="pisteOK ≔ ∅" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="pisteKO ≔ ∅" org.eventb.core.label="act7"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="*" org.eventb.core.comment="ensemble avions sur tarmac inclus dans ensAvions" org.eventb.core.identifier="ensAvionsTarmac"/>
+<org.eventb.core.invariant name="+" org.eventb.core.comment="inclus dans ensAvions" org.eventb.core.label="inv1" org.eventb.core.predicate="ensAvionsTarmac ⊆ ensAvions"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="decoller">
+<org.eventb.core.refinesEvent name="_sVNOwOHVEeeC1tehnGrBZg" org.eventb.core.target="decoller"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ ensAvionsDecollage"/>
+<org.eventb.core.parameter name=")" org.eventb.core.comment="un avion" org.eventb.core.identifier="a"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="ensAvionsDecollage≔ensAvionsDecollage∖{a}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="atterrir">
+<org.eventb.core.refinesEvent name="_sVOc4OHVEeeC1tehnGrBZg" org.eventb.core.target="atterrir"/>
+<org.eventb.core.guard name="+" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ ensAvions"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="card(ensAvionsAtterrissage) +card(ensAvionsTarmac)&lt; ntmax"/>
+<org.eventb.core.guard name="_sVOc4OHVEeeC1tehnGrBZi" org.eventb.core.label="grd3" org.eventb.core.predicate="ensAvionsDecollage = ∅"/>
+<org.eventb.core.action name="_sVOc4OHVEeeC1tehnGrBZj" org.eventb.core.assignment="ensAvionsAtterrissage ≔  ensAvionsAtterrissage ⋃ a" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="*" org.eventb.core.identifier="a"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="entrerPiste">
+<org.eventb.core.refinesEvent name="_sVOc4eHVEeeC1tehnGrBZg" org.eventb.core.target="entrerPiste"/>
+<org.eventb.core.parameter name="_sVOc4OHVEeeC1tehnGrBZh" org.eventb.core.identifier="a"/>
+<org.eventb.core.parameter name="_sVOc4eHVEeeC1tehnGrBZh" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="_sVOc4OHVEeeC1tehnGrBZk" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ ensAvionsTarmac"/>
+<org.eventb.core.guard name="_sVOc4OHVEeeC1tehnGrBZl" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ pisteOK"/>
+<org.eventb.core.guard name="_sVOc4eHVEeeC1tehnGrBZj" org.eventb.core.label="grd3" org.eventb.core.predicate="ensAvionsAtterrissage=∅"/>
+<org.eventb.core.guard name="_sVOc4eHVEeeC1tehnGrBZk" org.eventb.core.label="grd4" org.eventb.core.predicate="a↦p ∈ demandeAcces"/>
+<org.eventb.core.action name="_sVOc4eHVEeeC1tehnGrBZn" org.eventb.core.assignment="ensAvionsTarmac ≔ ensAvionsTarmac ∖ {a}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_sVOc4eHVEeeC1tehnGrBZo" org.eventb.core.assignment="ensAvionsDecollage ≔ ensAvionsDecollage ⋃ {a}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="sortirPiste">
+<org.eventb.core.refinesEvent name="_sVPD8OHVEeeC1tehnGrBZg" org.eventb.core.target="sortirPiste"/>
+<org.eventb.core.parameter name="_sVOc4eHVEeeC1tehnGrBZi" org.eventb.core.identifier="a"/>
+<org.eventb.core.parameter name="_sVPD8OHVEeeC1tehnGrBZh" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="_sVOc4eHVEeeC1tehnGrBZl" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ ensAvionsAtterrissage"/>
+<org.eventb.core.guard name="_sVOc4eHVEeeC1tehnGrBZm" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ pisteOK"/>
+<org.eventb.core.action name="_sVPD8OHVEeeC1tehnGrBZl" org.eventb.core.assignment="ensAvionsTarmac ≔ ensAvionsTarmac ⋃ {a}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_sVPD8OHVEeeC1tehnGrBZm" org.eventb.core.assignment="ensAvionsAtterrissage ≔ ensAvionsAtterrissage ∖ {a}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="1" org.eventb.core.comment="inclus dans ensAvions" org.eventb.core.label="inv2" org.eventb.core.predicate="ensAvionsDecollage ⊆ ensAvions"/>
+<org.eventb.core.variable name="2" org.eventb.core.comment="ensemble avion sur piste decollage inclus dans ensAvions" org.eventb.core.identifier="ensAvionsDecollage"/>
+<org.eventb.core.variable name="5" org.eventb.core.comment="ensemble avion sur piste atterrisage inclus dans ensAvions" org.eventb.core.identifier="ensAvionsAtterrissage"/>
+<org.eventb.core.invariant name="6" org.eventb.core.comment="inclus dans ensAvions" org.eventb.core.label="inv3" org.eventb.core.predicate="ensAvionsAtterrissage ⊆ ensAvions"/>
+<org.eventb.core.invariant name="8" org.eventb.core.label="inv4" org.eventb.core.predicate="ensAvionsTarmac ∪ ensAvionsDecollage ∪ ensAvionsAtterrissage ⊆ dom(clear)"/>
+<org.eventb.core.variable name="9" org.eventb.core.comment="demande d'acces" org.eventb.core.identifier="demandeAcces"/>
+<org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="accepterDemande">
+<org.eventb.core.parameter name="_sVPD8OHVEeeC1tehnGrBZi" org.eventb.core.comment="un avion" org.eventb.core.identifier="a"/>
+<org.eventb.core.parameter name="'" org.eventb.core.comment="une piste" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="_sVPD8OHVEeeC1tehnGrBZj" org.eventb.core.comment="a est un avion" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ ensAvions"/>
+<org.eventb.core.guard name="_sVPD8OHVEeeC1tehnGrBZk" org.eventb.core.comment="la piste est une piste mais pas un tarmac" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ ensPistes∖{tarmac}"/>
+<org.eventb.core.guard name=")" org.eventb.core.comment="a ne fait pas partie du domaine" org.eventb.core.label="grd3" org.eventb.core.predicate="a ∉ dom(demandeAcces)"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="p ne fait pas partie de l'image de la realtion a vers p" org.eventb.core.label="grd4" org.eventb.core.predicate="p ∉ ran(demandeAcces)"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd5" org.eventb.core.predicate="a↦p ∈ clear"/>
+<org.eventb.core.guard name="." org.eventb.core.comment="l'avion n'est ni en attente ni déjà autorisé à accéder piste p" org.eventb.core.label="grd6" org.eventb.core.predicate="p ∉ pisteOK ∪ pisteKO"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="demandeAcces(a) ≔ p" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="=" org.eventb.core.comment="une demande d'accès est une clearance" org.eventb.core.label="inv5" org.eventb.core.predicate="demandeAcces ⊆ clear"/>
+<org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="refuserDemande">
+<org.eventb.core.parameter name="(" org.eventb.core.comment="un avion" org.eventb.core.identifier="a"/>
+<org.eventb.core.parameter name="'" org.eventb.core.comment="une piste" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ ensAvions"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ ensPistes∖{tarmac}"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd3" org.eventb.core.predicate="p ∉ pisteOK ∪ pisteKO"/>
+<org.eventb.core.action name="_9PI74OJ7EeeMHK76VJaqWw" org.eventb.core.assignment="pisteKO ≔ pisteKO ∖{p}" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="A" org.eventb.core.label="inv6" org.eventb.core.predicate="demandeAcces ∈ ensAvions ⤔ ensPistes∖{tarmac}"/>
+<org.eventb.core.invariant name="C" org.eventb.core.label="inv7" org.eventb.core.predicate="ensAvionsTarmac ∩ ensAvionsDecollage = ∅"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="_1sQTIOHUEeeC1tehnGrBZh" org.eventb.core.comment="piste dont l'accès a été autorisée à un avion" org.eventb.core.identifier="pisteOK"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="_1sQTIOHUEeeC1tehnGrBZi" org.eventb.core.comment="piste dont l'accès a été refusé à un avion" org.eventb.core.identifier="pisteKO"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZj" org.eventb.core.label="inv8" org.eventb.core.predicate="ensAvionsDecollage ∩ ensAvionsAtterrissage = ∅"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZk" org.eventb.core.comment="ensembles finis pour facilité la tâche du prover" org.eventb.core.label="inv9" org.eventb.core.predicate="finite(ensAvionsTarmac)"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZl" org.eventb.core.comment="ensembles finis" org.eventb.core.label="inv10" org.eventb.core.predicate="finite(ensAvionsDecollage)"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZm" org.eventb.core.comment="ensembles finis" org.eventb.core.label="inv11" org.eventb.core.predicate="finite(ensAvionsAtterrissage)"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZn" org.eventb.core.label="inv12" org.eventb.core.predicate="pisteOK ⊆ ensPistes"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZo" org.eventb.core.label="inv13" org.eventb.core.predicate="pisteKO ⊆ ensPistes"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZp" org.eventb.core.comment="ensembles finis" org.eventb.core.label="inv14" org.eventb.core.predicate="finite(pisteKO)"/>
+<org.eventb.core.invariant name="_1sQTIOHUEeeC1tehnGrBZq" org.eventb.core.comment="ensembles finisment" org.eventb.core.label="inv15" org.eventb.core.predicate="finite(pisteOK)"/>
+<org.eventb.core.event name="_1sQTIOHUEeeC1tehnGrBZu" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="libererPisteOK">
+<org.eventb.core.action name=")" org.eventb.core.assignment="pisteOK ≔ pisteOK ∖{p}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="demandeAcces ≔ demandeAcces⩥{p}" org.eventb.core.label="act2"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ pisteOK"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_1sQTIOHUEeeC1tehnGrBZv" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="libererPisteKO">
+<org.eventb.core.action name=")" org.eventb.core.assignment="pisteKO ≔ pisteKO ∖{p}" org.eventb.core.label="act1"/>
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="_9PI74OJ7EeeMHK76VJaqWx" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ pisteKO"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="_CKd2UOKQEeeYLdzZIMLGcg" org.eventb.core.comment="invariant de glue avec raffinement1" org.eventb.core.label="inv16" org.eventb.core.predicate="nbAvionsDecollage=card(ensAvionsDecollage)"/>
+<org.eventb.core.invariant name="_EUdosOKQEeeYLdzZIMLGcg" org.eventb.core.comment="invariant de glue avec raffinement1" org.eventb.core.label="inv17" org.eventb.core.predicate="nbAvionsTarmac=card(ensAvionsTarmac)"/>
+<org.eventb.core.invariant name="_FoMhcOKQEeeYLdzZIMLGcg" org.eventb.core.comment="invariant de glue avec raffinement1" org.eventb.core.label="inv18" org.eventb.core.predicate="nbAvionsAtterrissage=card(ensAvionsAtterrissage)"/>
+</org.eventb.core.machineFile>

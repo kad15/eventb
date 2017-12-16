@@ -1,0 +1,20 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage{bsymb,b2latex}
+\begin{document}
+\SingleHeader{contexte2}
+\CONTEXT{contexte2}{contexte0}{}
+\SETS{
+	\Set{ensAvions}{set of planes}
+	\Set{ensPistes}{ensemble de pistes}
+}
+\CONSTANTS{
+	\Constant{clear}{cte clearance}
+	\Constant{tarmac}{cte tarmac}
+}
+\AXIOMS{
+	\Axiom{axm1}{false}{$clear \in{} ensAvions \rel{} ensPistes $}{\\relation binaire entre ensembles avions et pistes}
+	\Axiom{axm2}{false}{$tarmac \in{} ensPistes$}{\\le tarmac est élément de ensPistes}
+	\Axiom{axm3}{true}{$ensAvions \cprod{} \{tarmac\}\subseteq{} clear$}{\\tous les avions sont autorisés à se strouver sur le tarmac}
+}
+\END
+\end{document}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="ntmay" org.eventb.core.predicate="ntmax∈ℕ" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="ntmaz" org.eventb.core.predicate="ntmax&gt;0" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_gTX2IOI5EeetmvWmBRd61g"/>
+<org.eventb.core.poPredicate name="ntma{" org.eventb.core.predicate="ntmax=20" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_FtZ5wOJdEeecA88TaccdHg"/>
+<org.eventb.core.poIdentifier name="ensAvions" org.eventb.core.type="ℙ(ensAvions)"/>
+<org.eventb.core.poIdentifier name="ensPistes" org.eventb.core.type="ℙ(ensPistes)"/>
+<org.eventb.core.poIdentifier name="clear" org.eventb.core.type="ℙ(ensAvions×ensPistes)"/>
+<org.eventb.core.poIdentifier name="tarmac" org.eventb.core.type="ensPistes"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="axm3/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/contexte2.bpo|org.eventb.core.poFile#contexte2|org.eventb.core.poPredicateSet#HYPcontexte2"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ensAvions × {tarmac}⊆clear" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#."/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/atc/contexte2.bpo|org.eventb.core.poFile#contexte2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/atc/contexte2.bpo|org.eventb.core.poFile#contexte2|org.eventb.core.poPredicateSet#HYPcontexte2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="HYPcontexte2" org.eventb.core.parentSet="/atc/contexte2.bpo|org.eventb.core.poFile#contexte2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="clear∈ensAvions ↔ ensPistes" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="tarmac∈ensPistes" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/atc/contexte2.bpo|org.eventb.core.poFile#contexte2|org.eventb.core.poPredicateSet#HYPcontexte2" org.eventb.core.poStamp="2">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="ensAvions × {tarmac}⊆clear" org.eventb.core.source="/atc/contexte2.buc|org.eventb.core.contextFile#contexte2|org.eventb.core.axiom#."/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

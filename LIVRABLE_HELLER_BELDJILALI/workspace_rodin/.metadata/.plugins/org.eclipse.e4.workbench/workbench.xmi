@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_LW0RYeHxEee9f4NzYKwN2g" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_LW0RYuHxEee9f4NzYKwN2g" bindingContexts="_LW0RZOHxEee9f4NzYKwN2g">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.machine&quot; name=&quot;raffinement1.bum&quot; tooltip=&quot;atc/raffinement1.bum&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement1.bum&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.ProverUI&quot; name=&quot;machine0.bps&quot; tooltip=&quot;atc/machine0.bps&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/machine0.bps&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.ProverUI&quot; name=&quot;raffinement1.bps&quot; tooltip=&quot;atc/raffinement1.bps&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement1.bps&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;contexte0.buc&quot; tooltip=&quot;atc/contexte0.buc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/contexte0.buc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;machine0.bum&quot; tooltip=&quot;atc/machine0.bum&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/machine0.bum&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.ProverUI&quot; name=&quot;raffinement2.bps&quot; tooltip=&quot;atc/raffinement2.bps&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement2.bps&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;Contexte1.buc&quot; tooltip=&quot;atc/Contexte1.buc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/Contexte1.buc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;fr.systerel.editor.editors.RodinEditor&quot; name=&quot;raffinement2.bum&quot; tooltip=&quot;atc/raffinement2.bum&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement2.bum&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;raffinement2.bum&quot; tooltip=&quot;atc/raffinement2.bum&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement2.bum&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.ProverUI&quot; name=&quot;raffinement2.bps&quot; tooltip=&quot;atc/raffinement2.bps&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement2.bps&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;raffinement1.bum&quot; tooltip=&quot;atc/raffinement1.bum&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement1.bum&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.context&quot; name=&quot;contexte2.buc&quot; tooltip=&quot;atc/contexte2.buc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/contexte2.buc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.ProverUI&quot; name=&quot;raffinement1.bps&quot; tooltip=&quot;atc/raffinement1.bps&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/raffinement1.bps&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.ui.editors.ProverUI&quot; name=&quot;machine0.bps&quot; tooltip=&quot;atc/machine0.bps&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/machine0.bps&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;contexte0.buc&quot; tooltip=&quot;atc/contexte0.buc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/contexte0.buc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;machine0.bum&quot; tooltip=&quot;atc/machine0.bum&quot;>&#xD;&#xA;&lt;persistable path=&quot;/atc/machine0.bum&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_LW0RYuHxEee9f4NzYKwN2g" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_LhsEo-HxEee9f4NzYKwN2g" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_LW0RYuHxEee9f4NzYKwN2g" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_LhsEo-HxEee9f4NzYKwN2g" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1069" height="963">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -90,7 +90,7 @@
           <tags>persp.viewSC:org.eventb.ui.views.TypeEnv</tags>
           <tags>persp.viewSC:org.eventb.ui.symboltable.view</tags>
           <tags>persp.viewSC:org.rodinp.keyboard.ui.views.KeyboardView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_I_0iAeI3EeemWfF94_jsGA" selectedElement="_I_0iBOI3EeemWfF94_jsGA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_I_0iAeI3EeemWfF94_jsGA" selectedElement="_I_0iAuI3EeemWfF94_jsGA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_I_0iAuI3EeemWfF94_jsGA" elementId="left" containerData="2500" selectedElement="_I_0iA-I3EeemWfF94_jsGA">
               <children xsi:type="advanced:Placeholder" xmi:id="_I_0iA-I3EeemWfF94_jsGA" elementId="org.eventb.ui.views.ProofTreeUI" ref="_I_rYEOI3EeemWfF94_jsGA"/>
             </children>
@@ -109,12 +109,16 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_I_0iD-I3EeemWfF94_jsGA" containerData="2500" selectedElement="_I_0iEOI3EeemWfF94_jsGA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_I_0iD-I3EeemWfF94_jsGA" containerData="2500" selectedElement="_I_0iEuI3EeemWfF94_jsGA">
                 <children xsi:type="basic:PartStack" xmi:id="_I_0iEOI3EeemWfF94_jsGA" elementId="right" containerData="7000" selectedElement="_I_0iEeI3EeemWfF94_jsGA">
                   <children xsi:type="advanced:Placeholder" xmi:id="_I_0iEeI3EeemWfF94_jsGA" elementId="fr.systerel.explorer.navigator.view" ref="_LmKVFOHxEee9f4NzYKwN2g"/>
                 </children>
-                <children xsi:type="basic:PartStack" xmi:id="_I_0iEuI3EeemWfF94_jsGA" elementId="org.eventb.ui.symboltable.viewMStack" containerData="3000" selectedElement="_I_0iE-I3EeemWfF94_jsGA">
+                <children xsi:type="basic:PartStack" xmi:id="_I_0iEuI3EeemWfF94_jsGA" elementId="org.eventb.ui.symboltable.viewMStack" containerData="3000" selectedElement="_8Rg-keKSEeeYLdzZIMLGcg">
+                  <tags>Event-B</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_I_0iE-I3EeemWfF94_jsGA" elementId="org.eventb.ui.symboltable.view" ref="_LmUF8eHxEee9f4NzYKwN2g"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_nDMOYeKMEeeMHK76VJaqWw" elementId="org.eventb.ui.views.ProofInformation" ref="_nDMOYOKMEeeMHK76VJaqWw"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_7xCHseKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.CacheHypothesis" ref="_7xCHsOKSEeeYLdzZIMLGcg"/>
+                  <children xsi:type="advanced:Placeholder" xmi:id="_8Rg-keKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.SearchHypothesis" ref="_8Rg-kOKSEeeYLdzZIMLGcg"/>
                 </children>
               </children>
             </children>
@@ -151,23 +155,35 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_LmKU8OHxEee9f4NzYKwN2g" elementId="org.eclipse.ui.editorss" selectedElement="_LmKU8eHxEee9f4NzYKwN2g">
-      <children xsi:type="basic:PartStack" xmi:id="_LmKU8eHxEee9f4NzYKwN2g" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_EdavAOJREeeuXPYzIDUcPg">
+      <children xsi:type="basic:PartStack" xmi:id="_LmKU8eHxEee9f4NzYKwN2g" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_MktY4OKWEeeA0dH7GdMgwA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_EdavAOJREeeuXPYzIDUcPg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="raffinement1" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;raffinement1.bum&quot; partName=&quot;raffinement1&quot; title=&quot;raffinement1&quot; tooltip=&quot;atc/raffinement1.bum&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/atc/raffinement1.bum&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1677&quot; selectionTopPixel=&quot;558&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_yT6BkOJ0EeeMHK76VJaqWw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="contexte2" iconURI="platform:/plugin/org.eventb.ui/icons/full/obj16/ctx_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eventb.ui.editors.context&quot; name=&quot;contexte2.buc&quot; partName=&quot;contexte2&quot; title=&quot;contexte2&quot; tooltip=&quot;atc/contexte2.buc&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/atc/contexte2.buc&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eventb.ui.editors.context</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_0VaVkOKQEeeYLdzZIMLGcg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="raffinement2" iconURI="platform:/plugin/fr.systerel.editor/icons/full/clcl16/b_file.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;fr.systerel.editor.editors.RodinEditor&quot; name=&quot;raffinement2.bum&quot; partName=&quot;raffinement2&quot; title=&quot;raffinement2&quot; tooltip=&quot;atc/raffinement2.bum&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/atc/raffinement2.bum&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3060&quot; selectionTopPixel=&quot;1020&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>fr.systerel.editor.editors.RodinEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_GnlvoOKVEeeA0dH7GdMgwA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="raffinement2" iconURI="platform:/plugin/org.eventb.ui/icons/full/obj16/mch_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eventb.ui.editors.machine&quot; name=&quot;raffinement2.bum&quot; partName=&quot;raffinement2&quot; title=&quot;raffinement2&quot; tooltip=&quot;atc/raffinement2.bum&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/atc/raffinement2.bum&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eventb.ui.editors.machine</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_MktY4OKWEeeA0dH7GdMgwA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="raffinement2" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eventb.texteditor.ui.texteditor&quot; name=&quot;raffinement2.bum&quot; partName=&quot;raffinement2&quot; title=&quot;raffinement2&quot; tooltip=&quot;atc/raffinement2.bum&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/atc/raffinement2.bum&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3414&quot; selectionTopPixel=&quot;1371&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eventb.texteditor.ui.texteditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_etKZYOJREeeuXPYzIDUcPg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="raffinement1" iconURI="platform:/plugin/org.eventb.ui/icons/full/obj16/mch_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eventb.ui.editors.machine&quot; name=&quot;raffinement1.bum&quot; partName=&quot;raffinement1&quot; title=&quot;raffinement1&quot; tooltip=&quot;atc/raffinement1.bum&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/atc/raffinement1.bum&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eventb.ui.editors.machine</tags>
-          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -285,6 +301,42 @@
       <tags>View</tags>
       <tags>categoryTag:Event-B</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_nDMOYOKMEeeMHK76VJaqWw" elementId="org.eventb.ui.views.ProofInformation" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Proof Information" iconURI="platform:/plugin/org.eventb.ui/icons/full/ctool16/info_prover.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eventb.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eventb.internal.ui.proofinformation.ProofInformation"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Event-B</tags>
+      <menus xmi:id="_nDTjIOKMEeeMHK76VJaqWw" elementId="org.eventb.ui.views.ProofInformation">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_nDTjIeKMEeeMHK76VJaqWw" elementId="org.eventb.ui.views.ProofInformation" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_7xCHsOKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.CacheHypothesis" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Cache Hypothesis" iconURI="platform:/plugin/org.eventb.ui/icons/full/ctool16/ch_prover.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eventb.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eventb.internal.ui.cachehypothesis.CacheHypothesis"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Event-B</tags>
+      <menus xmi:id="_7xL4sOKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.CacheHypothesis">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_7xL4seKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.CacheHypothesis" visible="false"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_8Rg-kOKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.SearchHypothesis" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Search Hypothesis" iconURI="platform:/plugin/org.eventb.ui/icons/full/ctool16/sh_prover.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eventb.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eventb.internal.ui.searchhypothesis.SearchHypothesis"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Event-B</tags>
+      <menus xmi:id="_8RrWoOKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.SearchHypothesis">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_8RrWoeKSEeeYLdzZIMLGcg" elementId="org.eventb.ui.views.SearchHypothesis"/>
+    </sharedElements>
     <trimBars xmi:id="_Lh11oOHxEee9f4NzYKwN2g" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_LicSkOHxEee9f4NzYKwN2g" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -292,7 +344,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LilcgOHxEee9f4NzYKwN2g" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_b8sat-JCEeeuXPYzIDUcPg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_LXQ9m-HxEee9f4NzYKwN2g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_48PxQOKlEeeK1Pauma0eNQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_LXQ9m-HxEee9f4NzYKwN2g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LilcgeHxEee9f4NzYKwN2g" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -313,7 +365,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LilcheHxEee9f4NzYKwN2g" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_b8saweJCEeeuXPYzIDUcPg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_LXH0OOHxEee9f4NzYKwN2g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_48SNgeKlEeeK1Pauma0eNQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_LXH0OOHxEee9f4NzYKwN2g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_LilchuHxEee9f4NzYKwN2g" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1463,7 +1515,7 @@
   <addons xmi:id="_LW0Rc-HxEee9f4NzYKwN2g" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_LW0RdOHxEee9f4NzYKwN2g" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_LW-CYOHxEee9f4NzYKwN2g" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_4wf0QeKlEeeK1Pauma0eNQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_LXHzYOHxEee9f4NzYKwN2g" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_LXHzYeHxEee9f4NzYKwN2g" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
