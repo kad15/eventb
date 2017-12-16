@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poIdentifier name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="ntmay" org.eventb.core.predicate="ntmax=20" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="ntmaz" org.eventb.core.predicate="0&lt;ntmax" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_gTX2IOI5EeetmvWmBRd61g"/>
+<org.eventb.core.poPredicate name="ntma{" org.eventb.core.predicate="ntmax∈ℕ" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_gTX2IOI5EeetmvWmBRd61h"/>
+<org.eventb.core.poIdentifier name="avion" org.eventb.core.type="ℙ(avion)"/>
+<org.eventb.core.poIdentifier name="piste" org.eventb.core.type="ℙ(piste)"/>
+<org.eventb.core.poIdentifier name="statutPiste" org.eventb.core.type="ℙ(statutPiste)"/>
+<org.eventb.core.poIdentifier name="KO" org.eventb.core.type="statutPiste"/>
+<org.eventb.core.poIdentifier name="Neutre" org.eventb.core.type="statutPiste"/>
+<org.eventb.core.poIdentifier name="OK" org.eventb.core.type="statutPiste"/>
+<org.eventb.core.poIdentifier name="autorisation" org.eventb.core.type="ℙ(avion×piste)"/>
+<org.eventb.core.poIdentifier name="tarmac" org.eventb.core.type="piste"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/atc/Contexte1.bpo|org.eventb.core.poFile#Contexte1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="finite(avion)" org.eventb.core.source="/atc/Contexte1.buc|org.eventb.core.contextFile#Contexte1|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="autorisation∈avion ↔ piste" org.eventb.core.source="/atc/Contexte1.buc|org.eventb.core.contextFile#Contexte1|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="tarmac∈piste" org.eventb.core.source="/atc/Contexte1.buc|org.eventb.core.contextFile#Contexte1|org.eventb.core.axiom#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="avion × {tarmac}⊆autorisation" org.eventb.core.source="/atc/Contexte1.buc|org.eventb.core.contextFile#Contexte1|org.eventb.core.axiom#\/"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="partition(statutPiste,{OK},{KO},{Neutre})" org.eventb.core.source="/atc/Contexte1.buc|org.eventb.core.contextFile#Contexte1|org.eventb.core.axiom#4"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

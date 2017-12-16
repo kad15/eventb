@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="ntmax" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/atc/contexte0.bpo|org.eventb.core.poFile#contexte0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ntmax=20" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="0&lt;ntmax" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_gTX2IOI5EeetmvWmBRd61g"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="ntmax∈ℕ" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#_gTX2IOI5EeetmvWmBRd61h"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

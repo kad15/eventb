@@ -5,6 +5,17 @@
 \BOOKMARK [2][-]{subsection.2.2}{Analyse des sp\351cifications}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.3}{Reformulation des exigences}{section.2}% 6
 \BOOKMARK [1][-]{section.3}{Premi\350re mod\351lisation abstraite}{}% 7
-\BOOKMARK [1][-]{section.4}{Premier raffinement}{}% 8
-\BOOKMARK [1][-]{section.5}{Second raffinement}{}% 9
-\BOOKMARK [1][-]{section*.15}{Conclusion}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Analyse}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Contexte du syst\350me}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Machine :}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.4}{Preuves}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Premier raffinement}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Analyse}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{raffinement de l'\351tat du syst\350me clos}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Contexte}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.4}{Glue}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.5}{Convergence des nouveaux events}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.6}{Machine}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.7}{Preuve}{section.4}% 19
+\BOOKMARK [1][-]{section.5}{Second raffinement}{}% 20
+\BOOKMARK [1][-]{section*.11}{Conclusion}{}% 21

@@ -2,9 +2,9 @@
 	
 %\subsection{}
 %\paragraph{}
-
+\subsection{Analyse}
    On veut initialement considérer très peu d'exigences. L'énoncé nous indique
-   que seules les entrées et sorties de l'espace de l'aéroport sont étudiées. On effectue donc une étude formelle sur un système très simplifié où la piste et le tarmac ne sont pas pris en compte. Nous étudions uniquement les échanges d'avions entre l'espace de l'aéroport et l'espace extérieur ce qu'on modélise en utilisant deux events ou transitions :
+   que seules les entrées et sorties de l'espace de l'aéroport sont étudiées. On effectue donc une étude formelle sur un système très simplifié où la piste et le tarmac ne sont pas différenciés. Nous étudions uniquement les échanges d'avions entre l'espace de l'aéroport et l'espace extérieur, ce qu'on modélise en utilisant deux events\footnote{un event est nommé transition dans la sémantique des machines à états finis. C'est un couple (garde/action). L'action s'exécute si la garde est vraie.}, decoller et atterrir :
    
    \begin{itemize}
    	\item extout lorsqu'un avion sort de l'espace extérieur pour rentrer dans l'espace aéroportuaire,
@@ -13,61 +13,50 @@
 
 \begin{figure}[H]
 	\begin{center}	
-		\includegraphics[scale=0.4]{images/mod0}
-		\caption{Modèle abstrait}
+		\includegraphics[scale=0.4]{images/0/mod0}
+		\caption{Modèle abstrait : seuls les échanges avec l'extérieur sont pris en compte.}
 		\label{mod0}
 	\end{center}
 \end{figure}
 
-On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre total d'avions présents dans l'espace de l'aéroport à un instant donné. On note nt cette variable.
 
-\paragraph{Etat static ou \textit{contexte} du système :}
-L'état statique est caractérisé par ntmax, le nombre total maximum d'avions dans  l'espace de l'aéroport i.e. la capacité de l'aéroport:
+\subsection{Contexte du système}
+L'état statique du système, nommé contexte dans la sémantique event-b, est caractérisé par ntmax, le nombre total maximum d'avions dans  l'espace de l'aéroport i.e. la capacité de l'aéroport, tarmac et piste confondues.
 \begin{figure}[H]
 	\begin{center}	
-		\includegraphics[scale=0.8]{images/ctx0}
-		\caption{Etat static du système}
+		\includegraphics[scale=0.8]{images/0/ctx0}
+		\caption{Etat statique du système}
 		\label{ctx0}
 	\end{center}
 \end{figure}
 
-\paragraph{Etat dynamique du système :}
- L'état dynamique du système n'est constitué que de cette seule variable. Elle est définie au moyen de deux conditions ou \textit{invariants} :
-%   \begin{align}
-%  inv0\_1 : nt \in ℕ 
-%   \end{align}
-%   
-%    \begin{align}
-%   inv0\_2 : nt \le ntmax
-%   \end{align}
-%   
+\subsection{Machine :}
+
+On fait abstraction de la piste. Ainsi, la seule variable à considérer est le nombre total d'avions présents dans l'espace de l'aéroport à un instant donné. On note nt cette variable. L'état dynamique du système, nommé machine dans la sémantique rodin/event-b, n'est constitué que de cette seule variable. Elle est respecte deux conditions ou \textit{invariants} :
 
 \begin{figure}[H]
 	\begin{center}	
-		\includegraphics[scale=0.8]{images/mac0}
+		\includegraphics[scale=1]{images/0/machine0.png}
 		\caption{Etat dynamique du système}
-		\label{mac0}
+		\label{machine0}
 	\end{center}
 \end{figure}
 
-\begin{figure}[H]
-	\begin{center}	
-		\includegraphics[scale=0.8]{images/proof1}
-		\caption{Echec de deux preuves obligatoires}
-		\label{proof1}
-	\end{center}
-\end{figure}
+
+
+\subsection{Preuves}
+Pour débuguer le modèle formel initial, il a fallu ajouter deux gardes pour garantir un nombre d'avions compris entre 0 et 20 et éviter les deadlock.
+Une preuve interactive, dans la perspective "proving", icône PP du "Proof control Panel", est nécessaire pour démontrer le thérorème d'invariant DLF0 pour prendre en compte toutes les hypothèses. C'est à ce stade que les règles d'inférences, en l'occurrence MON et OR\_L, mettent en évidence qu'un axiome supplémentaire est nécessaire qui impose ntmax > 0. Ici, on fixe ntmax = 20. En effet, si ntmax = 0, le système est bloqué dès l'origine. 
 
 \begin{figure}[H]
 	\begin{center}	
-		\includegraphics[scale=0.8]{images/garde}
-		\caption{Ajout de 2 gardes et d'un théorème pour éviter les blocages}
+		\includegraphics[scale=0.8]{images/0/proof0}
+		\caption{Ajout de 2 gardes et d'un théorème pour éviter les blocages (invariant Deadlock free : DLF0)}
 		\label{garde}
 	\end{center}
 \end{figure}
 
-\paragraph{conclusion}
-Pour débuguer le modèle formel initial, il a fallu ajouter deux gardes pour garantir un nombre d'avions compris entre 0 et 20 et éviter les deadlock. Les exigences sont mises à jour pour tenir compte de ces oublis.
+ Les exigences sont mises à jour pour tenir compte de ces oublis.
 
 \begin{table} [H]
 	
@@ -83,7 +72,7 @@ Pour débuguer le modèle formel initial, il a fallu ajouter deux gardes pour ga
 		\hline 
 		FON-1.1& \textcolor{red}{Le contrôleur doit fonctionner indéfiniment une fois lancé.}  \\ 
 		\hline 
-		FON-2	& Le nombre d'avions immobilisés sur le tarmac est limité à 20 y compris ceux en attente de décollage\textcolor{red}{mais doit rester positif} \\ 
+		FON-2	& Le nombre d'avions immobilisés sur le tarmac est limité à 20 y compris ceux en attente de décollage\textcolor{red}{ mais doit rester positif} \\ 
 		\hline 
 		FON-3& Des avions entrent sur et quittent la piste d'atterrissage décollage  \\ 
 		\hline 

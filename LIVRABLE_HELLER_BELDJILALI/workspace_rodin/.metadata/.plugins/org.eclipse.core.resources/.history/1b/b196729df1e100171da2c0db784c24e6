@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1513367160571" org.eventb.texttools.text_representation="machine machine0 sees contexte0&#10;&#10;variables nt&#10;&#10;invariants&#10;  @inv1 nt ∈ ℕ&#10;  @inv2 nt ≤ ntmax&#10;  theorem @inv3 nt &lt; ntmax ∨ nt &gt; 0&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 nt ≔ 0&#10;  end&#10;&#10;  event decoller&#10;    where&#10;      @grd1 nt &gt; 0&#10;    then&#10;      @act1 nt ≔ nt − 1&#10;  end&#10;&#10;  event atterrir&#10;    where&#10;      @grd1 nt &lt; ntmax&#10;    then&#10;      @act1 nt ≔ nt + 1&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="0" org.eventb.core.target="contexte0"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="nt ≔ 0" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="(" org.eventb.core.identifier="nt"/>
+<org.eventb.core.invariant name=")" org.eventb.core.label="inv1" org.eventb.core.predicate="nt ∈ ℕ"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv2" org.eventb.core.predicate="nt ≤ ntmax"/>
+<org.eventb.core.event name="," org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="decoller">
+<org.eventb.core.action name="(" org.eventb.core.assignment="nt ≔ nt − 1" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="nt &gt; 0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="atterrir">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="nt &lt; ntmax"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="nt ≔ nt + 1" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="." org.eventb.core.label="DLF0" org.eventb.core.predicate="nt &lt; ntmax ∨ nt &gt; 0"/>
+</org.eventb.core.machineFile>

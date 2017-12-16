@@ -1,0 +1,69 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage{bsymb,b2latex}
+\begin{document}
+\SingleHeader{raffinement1}
+\MACHINE{raffinement1}{machine0}{contexte0}{}
+\VARIABLES{
+	\Variable{nbAvionsDecollage}{}
+	\Variable{nbAvionsAtterrissage}{}
+	\Variable{nbAvionsTarmac}{}
+}
+\INVARIANTS{
+	\Invariant{inv1}{false}{$nbAvionsDecollage \in{} \nat{}$}{}
+	\Invariant{inv2}{false}{$nbAvionsAtterrissage \in{} \nat{}$}{}
+	\Invariant{inv3}{false}{$nbAvionsTarmac \in{} \nat{}$}{}
+	\Invariant{inv4}{false}{$nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac = nt$}{}
+	\Invariant{inv5}{false}{$nbAvionsAtterrissage =0 \lor{} nbAvionsDecollage=0$}{\\piste à sens unique à t donné}
+	\Invariant{thm1}{true}{$nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac \in{} \nat{}$}{}
+	\Invariant{DLF0}{true}{$\\(nbAvionsDecollage>0) \lor{}\\~               (nbAvionsAtterrissage>0 )\lor{}\\~               (nbAvionsAtterrissage + nbAvionsTarmac<ntmax \land{}nbAvionsDecollage=0) \lor{}\\~               (0<nbAvionsTarmac \land{} nbAvionsAtterrissage=0)$}{}
+}
+\VARIANT{
+	\Variant{$nbAvionsTarmac + 2 * nbAvionsAtterrissage$}{variant décrémenté par entrerPiste et sortir piste}
+}
+\EVENTS{
+\INITIALISATION{false}{}{
+	\ACTIONS{false}{
+		\Action{act1}{$nbAvionsDecollage \bcmeq{} 0$}{true}{}
+		\Action{act2}{$nbAvionsAtterrissage \bcmeq{} 0$}{true}{}
+		\Action{act3}{$nbAvionsTarmac \bcmeq{} 0$}{true}{}
+	}
+}
+\EVT{decoller}{false}{ordinary}{decoller}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$nbAvionsDecollage >0$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$nbAvionsDecollage \bcmeq{} nbAvionsDecollage - 1$}{true}{}
+	}
+}
+\EVT{atterrir}{false}{ordinary}{atterrir}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$nbAvionsAtterrissage + nbAvionsTarmac < ntmax$}{true}{\\la capa aéroport ne doit pas être dépassée}
+		\Guard{grd2}{false}{$nbAvionsDecollage =0$}{true}{\\décollage interdit si atterrissage : piste à sens unique à t donné}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$nbAvionsAtterrissage \bcmeq{} nbAvionsAtterrissage+1$}{true}{}
+	}
+}
+\EVT{entrerPiste}{false}{convergent}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$nbAvionsTarmac>0$}{true}{\\tarmac non vide}
+		\Guard{grd2}{false}{$nbAvionsAtterrissage = 0$}{true}{\\pas d'atterrissage si entrée piste}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$nbAvionsDecollage\bcmeq{}nbAvionsDecollage+1$}{true}{}
+		\Action{act2}{$nbAvionsTarmac\bcmeq{}nbAvionsTarmac-1$}{true}{}
+	}
+}
+\EVT{sortirPiste}{false}{convergent}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$nbAvionsAtterrissage>0$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$nbAvionsAtterrissage\bcmeq{}nbAvionsAtterrissage-1$}{true}{}
+		\Action{act2}{$nbAvionsTarmac\bcmeq{}nbAvionsTarmac+1$}{true}{}
+	}
+}
+}
+\END
+\end{document}

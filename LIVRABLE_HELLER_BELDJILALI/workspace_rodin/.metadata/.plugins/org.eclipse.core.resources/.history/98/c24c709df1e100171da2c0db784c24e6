@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1513371275250" org.eventb.texttools.text_representation="context Contexte1 extends contexte0&#10;&#10;sets piste avion statutPiste&#10;&#10;constants autorisation tarmac OK KO Neutre&#10;&#10;axioms&#10;  @axm1 finite(avion) // For that we use card()&#10;  @axm2 autorisation ∈ avion↔piste&#10;  @axm3 tarmac ∈ piste&#10;  @axm4 avion × {tarmac} ⊆ autorisation // tout les avions ont permit dans piste&#10;  @axm5 partition(statutPiste, {OK}, {KO}, {Neutre})&#10;end&#10;" version="3">
+<org.eventb.core.extendsContext name="_sV0vQOHUEeeC1tehnGrBZg" org.eventb.core.target="contexte0"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="piste"/>
+<org.eventb.core.carrierSet name=")" org.eventb.core.identifier="avion"/>
+<org.eventb.core.axiom name="*" org.eventb.core.comment="For that we use card()" org.eventb.core.label="axm1" org.eventb.core.predicate="finite(avion)"/>
+<org.eventb.core.constant name="+" org.eventb.core.identifier="autorisation"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm2" org.eventb.core.predicate="autorisation ∈ avion↔piste"/>
+<org.eventb.core.constant name="-" org.eventb.core.identifier="tarmac"/>
+<org.eventb.core.axiom name="." org.eventb.core.label="axm3" org.eventb.core.predicate="tarmac ∈ piste"/>
+<org.eventb.core.axiom name="/" org.eventb.core.comment="tout les avions ont permit dans piste" org.eventb.core.label="axm4" org.eventb.core.predicate="avion × {tarmac} ⊆ autorisation"/>
+<org.eventb.core.carrierSet name="0" org.eventb.core.identifier="statutPiste"/>
+<org.eventb.core.constant name="1" org.eventb.core.identifier="OK"/>
+<org.eventb.core.constant name="2" org.eventb.core.identifier="KO"/>
+<org.eventb.core.constant name="3" org.eventb.core.identifier="Neutre"/>
+<org.eventb.core.axiom name="4" org.eventb.core.label="axm5" org.eventb.core.predicate="partition(statutPiste, {OK}, {KO}, {Neutre})"/>
+</org.eventb.core.contextFile>

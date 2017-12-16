@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="18">
+<org.eventb.core.poIdentifier name="ntmax" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="ntmay" org.eventb.core.predicate="ntmax=20" org.eventb.core.source="/atc/contexte0.buc|org.eventb.core.contextFile#contexte0|org.eventb.core.axiom#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="18">
+<org.eventb.core.poIdentifier name="nbAvionsAtterrissage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbAvionsDecollage" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbAvionsTarmac" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nt" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="nbAvionsAtterrissagf" org.eventb.core.predicate="nt∈ℕ" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#)"/>
+<org.eventb.core.poPredicate name="nbAvionsAtterrissagg" org.eventb.core.predicate="nt≤ntmax" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="nbAvionsAtterrissagh" org.eventb.core.predicate="nt&lt;ntmax∨nt&gt;0" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.invariant#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv5/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsAtterrissage=0∨nbAvionsDecollage=0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsB"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsB"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DLF1/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsA"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsA"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagg"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagg"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagg"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagg"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0+0+0=0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#*"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTnbAvionsAtterrissagg" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="18">
+<org.eventb.core.poIdentifier name="nbAvionsDecollage'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbAvionsAtterrissage'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nt'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbAvionsTarmac'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPnbAvionsAtterrissagg" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTIDENTnbAvionsAtterrissagg" org.eventb.core.poStamp="18"/>
+<org.eventb.core.poSequent name="decoller/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagh"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsDecollage − 1∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#decoller\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="decoller/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagh"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsDecollage − 1+nbAvionsAtterrissage+nbAvionsTarmac=nt − 1" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#decoller\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="decoller/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagh"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nt&gt;0" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#,|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#decoller\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTnbAvionsAtterrissagh" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="34">
+<org.eventb.core.poIdentifier name="nbAvionsDecollage'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nt'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPnbAvionsAtterrissagh" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTIDENTnbAvionsAtterrissagh" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="nbAvionsDecollage&gt;0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#-|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="atterrir/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagi"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsAtterrissage+1∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#."/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#atterrir\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="atterrir/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagi"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsDecollage+(nbAvionsAtterrissage+1)+nbAvionsTarmac=nt+1" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#."/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#atterrir\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="atterrir/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagi"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nt&lt;ntmax" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/atc/machine0.bum|org.eventb.core.machineFile#machine0|org.eventb.core.event#-|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#."/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#atterrir\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTnbAvionsAtterrissagi" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="34">
+<org.eventb.core.poIdentifier name="nbAvionsAtterrissage'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nt'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPnbAvionsAtterrissagi" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTIDENTnbAvionsAtterrissagi" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nbAvionsDecollage=0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#.|org.eventb.core.guard#_pUBSgOHREee795omJdWmQB"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="entrerPiste/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagj"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsDecollage+1∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#,"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#entrerPiste\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="entrerPiste/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagj"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsTarmac − 1∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#entrerPiste\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="entrerPiste/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagj"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(nbAvionsDecollage+1)+nbAvionsAtterrissage+(nbAvionsTarmac − 1)=nt" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#entrerPiste\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="entrerPiste/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagj"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsTarmac − 1+3∗nbAvionsAtterrissage&lt;nbAvionsTarmac+3∗nbAvionsAtterrissage" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#entrerPiste\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="entrerPiste/NAT" org.eventb.core.accurate="true" org.eventb.core.poDesc="Natural number variant of event" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagj"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsTarmac+3∗nbAvionsAtterrissage∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#entrerPiste\/NAT|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTnbAvionsAtterrissagj" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="34">
+<org.eventb.core.poIdentifier name="nbAvionsDecollage'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbAvionsTarmac'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPnbAvionsAtterrissagj" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTIDENTnbAvionsAtterrissagj" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="nbAvionsTarmac&gt;0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nbAvionsAtterrissage=0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#5|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="sortirPiste/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagk"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsAtterrissage − 1∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#sortirPiste\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="sortirPiste/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagk"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsTarmac+1∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#sortirPiste\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="sortirPiste/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagk"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsDecollage+(nbAvionsAtterrissage − 1)+(nbAvionsTarmac+1)=nt" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#sortirPiste\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="sortirPiste/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagk"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(nbAvionsTarmac+1)+3∗(nbAvionsAtterrissage − 1)&lt;nbAvionsTarmac+3∗nbAvionsAtterrissage" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#sortirPiste\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="sortirPiste/NAT" org.eventb.core.accurate="true" org.eventb.core.poDesc="Natural number variant of event" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTALLHYPnbAvionsAtterrissagk"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="nbAvionsTarmac+3∗nbAvionsAtterrissage∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.variant#7"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poSequent#sortirPiste\/NAT|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTnbAvionsAtterrissagk" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="34">
+<org.eventb.core.poIdentifier name="nbAvionsAtterrissage'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="nbAvionsTarmac'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPnbAvionsAtterrissagk" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#EVTIDENTnbAvionsAtterrissagk" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.event#6|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPcontexte6" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="nbAvionsDecollage∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nbAvionsAtterrissage∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#0"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="nbAvionsTarmac∈ℕ" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPcontexte8" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte6" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="nbAvionsAtterrissage=0∨nbAvionsDecollage=0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsB"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="nbAvionsDecollage+nbAvionsAtterrissage+nbAvionsTarmac=nt" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/atc/raffinement1.bpo|org.eventb.core.poFile#raffinement1|org.eventb.core.poPredicateSet#HYPcontexte8" org.eventb.core.poStamp="34">
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="nbAvionsDecollage&gt;0∨(nbAvionsAtterrissage+nbAvionsTarmac&lt;ntmax∧nbAvionsDecollage=0)∨(nbAvionsTarmac&gt;0∧nbAvionsAtterrissage=0)∨nbAvionsAtterrissage&gt;0" org.eventb.core.source="/atc/raffinement1.bum|org.eventb.core.machineFile#raffinement1|org.eventb.core.invariant#_gpgnYOH7Eee7O7WqJsjtsA"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

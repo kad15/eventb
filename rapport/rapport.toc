@@ -12,12 +12,19 @@
 \contentsline {paragraph}{}{3}{section*.9}
 \contentsline {subsection}{\numberline {2.3}Reformulation des exigences}{4}{subsection.2.3}
 \contentsline {section}{\numberline {3}Premi\IeC {\`e}re mod\IeC {\'e}lisation abstraite}{4}{section.3}
-\contentsline {paragraph}{Etat static ou \textit {contexte} du syst\IeC {\`e}me :}{5}{section*.10}
-\contentsline {paragraph}{Etat dynamique du syst\IeC {\`e}me :}{5}{section*.11}
-\contentsline {paragraph}{conclusion}{6}{section*.12}
+\contentsline {subsection}{\numberline {3.1}Analyse}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Contexte du syst\IeC {\`e}me}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Machine :}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Preuves}{6}{subsection.3.4}
 \contentsline {section}{\numberline {4}Premier raffinement}{7}{section.4}
-\contentsline {paragraph}{}{8}{section*.13}
-\contentsline {paragraph}{raffinement de l'\IeC {\'e}tat du syst\IeC {\`e}me clos}{8}{section*.14}
-\contentsline {section}{\numberline {5}Second raffinement}{8}{section.5}
-\contentsline {section}{Conclusion}{8}{section*.15}
-\contentsline {paragraph}{}{8}{section*.16}
+\contentsline {subsection}{\numberline {4.1}Analyse}{7}{subsection.4.1}
+\contentsline {paragraph}{}{9}{section*.10}
+\contentsline {subsection}{\numberline {4.2}raffinement de l'\IeC {\'e}tat du syst\IeC {\`e}me clos}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Contexte}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Glue}{10}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Convergence des nouveaux events}{10}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Machine}{10}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Preuve}{10}{subsection.4.7}
+\contentsline {section}{\numberline {5}Second raffinement}{13}{section.5}
+\contentsline {section}{Conclusion}{13}{section*.11}
+\contentsline {paragraph}{}{13}{section*.12}

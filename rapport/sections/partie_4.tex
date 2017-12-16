@@ -1,8 +1,22 @@
 \section{Premier raffinement}
 
-Dans cette partie, on introduit la piste pour évoluer vers un modèle plus concret. On peut ainsi spécifier  le nombre d'avions se trouvant sur la piste pour un décollage et après un atterrissage ainsi que le nombre d'avions sur le tarmac.
+\subsection{Analyse}
+Dans cette partie, on introduit la piste pour évoluer vers un modèle plus concret. On peut ainsi spécifier le nombre d'avions se trouvant sur la piste en vue  d'un décollage et après un atterrissage ainsi que le nombre d'avions sur le tarmac.
 Ce fait implique un "raffinement" des exigences environnementales ; on doit avoir un capteur capable de compter les avions au décollage et un capteur pour les avions à l'atterrissage. Ce qui donne :
-
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.3]{images/1/env2}
+		\caption{Environnement du système : version 2}
+		\label{ctx}
+	\end{center}
+\end{figure}
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.4]{images/1/raf1}
+		\caption{Premier raffinement du système : piste et tarmac sont différenciés}
+		\label{raf1}
+	\end{center}
+\end{figure}
 
 \begin{table} [H]
 	\centering
@@ -47,14 +61,62 @@ Ce fait implique un "raffinement" des exigences environnementales ; on doit avoi
 
 
 \paragraph{}
-Contrairement à ce qui se passe dans la réalité, les spécifications laissent la possibilité d'avoir au même moment plusieurs avions sur la piste au décollage ou à l'atterrissage dès lors qu'on ne mélange pas les décollages et atterrissages. En fait, cette spécification est similaire à celle d'un pont étroit qui à un instant donné est en sens unique car deux voitures n'ont pas la place de se croiser. Ici, le tarmac joue le rôle de l'île dans l'exemple du cours, la piste celui du pont et les terres continentales celui de l'espace extérieur à l'aéroport.
+Contrairement à ce qui se passe dans la réalité, les spécifications laissent la possibilité d'avoir au même moment plusieurs avions sur la piste au décollage ou à l'atterrissage dès lors qu'on ne mélange pas les décollages et atterrissages.
+La piste est, à un instant donné, en sens unique.
 
 
-\paragraph{raffinement de l'état du système clos}
+\subsection{raffinement de l'état du système clos}
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.4]{images/1/raf1}
+		\caption{Premier raffinement du système : la piste et le tarmac sont différenciés}
+		\label{raf1}
+	\end{center}
+\end{figure}
 
-Le CONTEXTE ne change pas ; on a toujours 
+\subsection{Contexte}
+Le CONTEXTE n'est pas modifié. La constante ntmax du système caractérise l'état statique du système concret associé à ce premier raffinement.
+
+\begin{figure}[H]
+	\begin{center}	
+		\includegraphics[scale=0.4]{images/1/ctx1}
+		\caption{Contexte premier raffinement}
+		\label{ctx1}
+	\end{center}
+\end{figure}
+
+\subsection{Glue}Ces variables vérifient nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac = nt. C'est l'invariant de "glue" qui fait le lien entre les 3 variables concrètes à la variable abstraite nt.
+
+\subsection{Convergence des nouveaux events}
+
+On définit un variant entier naturel, en l'occurrence, $nbAvionsTarmac + 2 ∗ nbAvionsAtterrissage$ dont on a vérifié qu'il est bien décrémenté par les deux nouveaux events introduits: $entrerPiste$ et $sortirPiste$ pour éviter qu'ils ne soient indéfiniment activés avec pour conséquence une interdition des décollages et atterrissages.
+
+\subsection{Machine}
+ On définit une nouvelle machine nommée "raffinement1" pour prendre en compte les nouvelles variables. Machine obtenue par raffinage de la mahine0
+ 
+ \subsection{Preuve}
+ 
+ Comme pour la machine abstraite, le théorème DLF0 doit être prouvé interactivement via la perspective "Proving" pour prendre en compte toutes les hypothèses.
+ 
+ \begin{figure}[H]
+ 	\begin{center}	
+ 		\includegraphics[scale=1.5]{images/1/proof1}
+ 		\caption{Preuves du premier raffinement}
+ 		\label{proof1}
+ 	\end{center}
+ \end{figure}
+ 
+
+ 
+ \begin{figure}[H]
+ 	\begin{center}	
+ 		\includegraphics[scale=0.8]{images/1/machine1}
+ 		\caption{}
+ 		\label{machine1}
+ 	\end{center}
+ \end{figure}
+ 
 
 
-%\subsection{}
-%\paragraph{}
+
 

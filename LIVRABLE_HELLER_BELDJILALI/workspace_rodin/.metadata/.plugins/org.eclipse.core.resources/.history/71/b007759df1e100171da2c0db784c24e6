@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase" org.eventb.texttools.text_lastmodified="1513377574814" org.eventb.texttools.text_representation="machine raffinement1 refines machine0  sees contexte0&#10;&#10;variables nbAvionsDecollage nbAvionsAtterrissage nbAvionsTarmac&#10;&#10;invariants&#10;  @inv1 nbAvionsDecollage ∈ ℕ&#10;  @inv2 nbAvionsAtterrissage ∈ ℕ&#10;  @inv3 nbAvionsTarmac ∈ ℕ&#10;  @inv4 nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac = nt&#10;  theorem @inv5 nbAvionsDecollage &gt;0 ∨  (nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac&lt;ntmax−1)  ∨   (nbAvionsTarmac&gt;0)  ∨  (nbAvionsAtterrissage&gt;0)&#10;&#10;&#10;variant nbAvionsTarmac + 3 ∗ nbAvionsAtterrissage&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 nbAvionsDecollage ≔ 0&#10;      @act2 nbAvionsAtterrissage ≔ 0&#10;      @act3 nbAvionsTarmac ≔ 0&#10;  end&#10;&#10;  event decoller refines decoller&#10;    where&#10;      @grd1 nbAvionsDecollage &gt;0&#10;    then&#10;      @act1 nbAvionsDecollage ≔ nbAvionsDecollage − 1&#10;  end&#10;&#10;  event atterrir refines atterrir&#10;    where&#10;      @grd1 nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac &lt; ntmax − 1&#10;    then&#10;      @act1 nbAvionsAtterrissage ≔ nbAvionsAtterrissage+1&#10;  end&#10;&#10;  convergent event entrerPiste&#10;    where&#10;      @grd1 nbAvionsTarmac&gt;0&#10;    then&#10;      @act1 nbAvionsDecollage≔nbAvionsDecollage+1&#10;      @act2 nbAvionsTarmac≔nbAvionsTarmac−1&#10;  end&#10;&#10;  convergent event sortirPiste&#10;    where&#10;      @grd1 nbAvionsAtterrissage&gt;0&#10;    then&#10;      @act1 nbAvionsAtterrissage≔nbAvionsAtterrissage−1&#10;      @act2 nbAvionsTarmac≔nbAvionsTarmac+1&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.refinesMachine name=")" org.eventb.core.target="machine0"/>
+<org.eventb.core.seesContext name="9" org.eventb.core.target="contexte0"/>
+<org.eventb.core.event name="*" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="(" org.eventb.core.assignment="nbAvionsDecollage ≔ 0" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="nbAvionsAtterrissage ≔ 0" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_8cxggOHbEeeC1tehnGrBZg" org.eventb.core.assignment="nbAvionsTarmac ≔ 0" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="nbAvionsDecollage"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv1" org.eventb.core.predicate="nbAvionsDecollage ∈ ℕ"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="decoller">
+<org.eventb.core.refinesEvent name="_8cyuoOHbEeeC1tehnGrBZg" org.eventb.core.target="decoller"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="nbAvionsDecollage ≔ nbAvionsDecollage − 1" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="nbAvionsDecollage &gt;0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="atterrir">
+<org.eventb.core.refinesEvent name="_pUBSgOHREee795omJdWmQA" org.eventb.core.target="atterrir"/>
+<org.eventb.core.action name="'" org.eventb.core.assignment="nbAvionsAtterrissage ≔ nbAvionsAtterrissage+1" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac &lt; ntmax − 1"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="nbAvionsAtterrissage"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="inv2" org.eventb.core.predicate="nbAvionsAtterrissage ∈ ℕ"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="nbAvionsTarmac"/>
+<org.eventb.core.invariant name="3" org.eventb.core.label="inv3" org.eventb.core.predicate="nbAvionsTarmac ∈ ℕ"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="inv4" org.eventb.core.predicate="nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac = nt"/>
+<org.eventb.core.event name="5" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="entrerPiste">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="nbAvionsTarmac&gt;0"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="nbAvionsDecollage≔nbAvionsDecollage+1" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="nbAvionsTarmac≔nbAvionsTarmac−1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="1" org.eventb.core.extended="false" org.eventb.core.label="sortirPiste">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="nbAvionsAtterrissage&gt;0"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="nbAvionsAtterrissage≔nbAvionsAtterrissage−1" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="nbAvionsTarmac≔nbAvionsTarmac+1" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.variant name="7" org.eventb.core.expression="nbAvionsTarmac + 2 ∗ nbAvionsAtterrissage"/>
+<org.eventb.core.invariant name="_S7s88OHiEeeqJNbthsN2lQ" org.eventb.core.label="DLF1" org.eventb.core.predicate="nbAvionsDecollage &gt;0 ∨  (nbAvionsDecollage + nbAvionsAtterrissage + nbAvionsTarmac&lt;ntmax−1)  ∨   (nbAvionsTarmac&gt;0)  ∨  (nbAvionsAtterrissage&gt;0)" org.eventb.core.theorem="true"/>
+</org.eventb.core.machineFile>

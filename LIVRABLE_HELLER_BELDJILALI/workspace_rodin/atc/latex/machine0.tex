@@ -1,0 +1,38 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage{bsymb,b2latex}
+\begin{document}
+\SingleHeader{machine0}
+\MACHINE{machine0}{}{contexte0}{}
+\VARIABLES{
+	\Variable{nt}{}
+}
+\INVARIANTS{
+	\Invariant{inv1}{false}{$nt \in{} \nat{}$}{}
+	\Invariant{inv2}{false}{$nt \leq{} ntmax$}{}
+	\Invariant{DLF0}{true}{$nt < ntmax \lor{} nt > 0$}{}
+}
+\EVENTS{
+\INITIALISATION{false}{}{
+	\ACTIONS{false}{
+		\Action{act1}{$nt \bcmeq{} 0$}{true}{}
+	}
+}
+\EVT{decoller}{false}{ordinary}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$nt > 0$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$nt \bcmeq{} nt - 1$}{true}{}
+	}
+}
+\EVT{atterrir}{false}{ordinary}{}{}{
+	\GUARDS{false}{
+		\Guard{grd1}{false}{$nt < ntmax$}{true}{}
+	}
+	\ACTIONS{true}{
+		\Action{act1}{$nt \bcmeq{} nt + 1$}{true}{}
+	}
+}
+}
+\END
+\end{document}
